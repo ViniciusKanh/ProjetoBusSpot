@@ -1,0 +1,36 @@
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\bin\Debug\net6.0\Classes.deps.json
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\bin\Debug\net6.0\Classes.dll
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\bin\Debug\net6.0\Classes.pdb
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.csproj.AssemblyReference.cache
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.AssemblyInfoInputs.cache
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.AssemblyInfo.cs
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.csproj.CoreCompileInputs.cache
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.dll
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\refint\Classes.dll
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\Classes.pdb
+G:\Meu Drive\Faculdade\Aula\Semestre Letivo\2022.1\Analise de Projeto e Sistemas\APSE5_Portfolio_Academico\Projeto_BusSpot\Projeto\Classes\obj\Debug\net6.0\ref\Classes.dll
+C:\Users\Vinicius\source\repos\Classes\bin\Debug\net6.0\Classes.deps.json
+C:\Users\Vinicius\source\repos\Classes\bin\Debug\net6.0\Classes.dll
+C:\Users\Vinicius\source\repos\Classes\bin\Debug\net6.0\Classes.pdb
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.csproj.AssemblyReference.cache
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.AssemblyInfoInputs.cache
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.AssemblyInfo.cs
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.dll
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\refint\Classes.dll
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\Classes.pdb
+C:\Users\Vinicius\source\repos\Classes\obj\Debug\net6.0\ref\Classes.dll
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\bin\Debug\net6.0\Classes.deps.json
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\bin\Debug\net6.0\Classes.dll
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\bin\Debug\net6.0\Classes.pdb
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.csproj.AssemblyReference.cache
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.AssemblyInfoInputs.cache
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.AssemblyInfo.cs
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.dll
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\refint\Classes.dll
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\Classes.pdb
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\Classes\obj\Debug\net6.0\ref\Classes.dll

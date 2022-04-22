@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Cadastro\Cadastro_Bairro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cadastro\Cadastro_Cidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cadastro\Cadastro_Endereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cadastro\Cadastro_Estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cadastro\Cadastro_Logradouro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cadastro\Cadastro_TipoLogradouro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
