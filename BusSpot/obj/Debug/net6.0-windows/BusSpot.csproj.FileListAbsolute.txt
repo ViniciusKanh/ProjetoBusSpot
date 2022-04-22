@@ -202,7 +202,6 @@ C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\B
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Cadastro.Cadastro_Estado.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Cadastro.Cadastro_Logradouro.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Cadastro.Cadastro_TipoLogradouro.resources
-C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Login.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.csproj.GenerateResource.cache
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.AssemblyInfoInputs.cache
@@ -214,3 +213,6 @@ C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\r
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.pdb
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.genruntimeconfig.cache
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\ref\BusSpot.dll
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.MenuPrincipal.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Properties.Resources.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.frmLogin.resources

@@ -30,13 +30,13 @@ namespace Classes.Endereco
 		public ICollection<Paradas> paradas { get; private set; }
      
 
-        public Endereco()
+     public Endereco()
         {
         }
 
 
         ///  
-        public void Incluir_cep()
+     public void Incluir_cep()
 	{
 
 	}

@@ -39,7 +39,6 @@
             this.chkk_deletar = new System.Windows.Forms.CheckBox();
             this.dataLista = new System.Windows.Forms.DataGridView();
             this.Deletar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Btn_Imprimir = new System.Windows.Forms.Button();
             this.Btn_Buscar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -79,7 +78,7 @@
             // 
             // btn_Sair
             // 
-            this.btn_Sair.Location = new System.Drawing.Point(324, 24);
+            this.btn_Sair.Location = new System.Drawing.Point(243, 23);
             this.btn_Sair.Name = "btn_Sair";
             this.btn_Sair.Size = new System.Drawing.Size(75, 23);
             this.btn_Sair.TabIndex = 2;
@@ -121,7 +120,6 @@
             this.tabPage1.Controls.Add(this.lbl_total);
             this.tabPage1.Controls.Add(this.chkk_deletar);
             this.tabPage1.Controls.Add(this.dataLista);
-            this.tabPage1.Controls.Add(this.Btn_Imprimir);
             this.tabPage1.Controls.Add(this.Btn_Buscar);
             this.tabPage1.Controls.Add(this.txt_Buscar);
             this.tabPage1.Controls.Add(this.btn_Sair);
@@ -180,15 +178,6 @@
             this.Deletar.HeaderText = "Deletar";
             this.Deletar.Name = "Deletar";
             this.Deletar.ReadOnly = true;
-            // 
-            // Btn_Imprimir
-            // 
-            this.Btn_Imprimir.Location = new System.Drawing.Point(243, 23);
-            this.Btn_Imprimir.Name = "Btn_Imprimir";
-            this.Btn_Imprimir.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Imprimir.TabIndex = 9;
-            this.Btn_Imprimir.Text = "Imprimir";
-            this.Btn_Imprimir.UseVisualStyleBackColor = true;
             // 
             // Btn_Buscar
             // 
@@ -363,7 +352,7 @@
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+          //  throw new NotImplementedException();
         }
 
         #endregion
@@ -377,7 +366,6 @@
         private CheckBox chkk_deletar;
         private DataGridView dataLista;
         private DataGridViewCheckBoxColumn Deletar;
-        private Button Btn_Imprimir;
         private Button Btn_Buscar;
         private GroupBox groupBox1;
         private Button btn_Cancelar;

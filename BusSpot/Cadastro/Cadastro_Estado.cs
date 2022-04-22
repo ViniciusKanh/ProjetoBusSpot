@@ -33,12 +33,14 @@ namespace BusSpot.Cadastro
 
         private void Limpar()
         {
+            this.txt_IDESTADO.Text = string.Empty;
             this.txt_Nome.Text = string.Empty;
             this.txt_Sigla.Text = string.Empty;
         }
 
         private void Habilitar(bool valor)
         {
+            this.txt_IDESTADO.ReadOnly = !valor;
             this.txt_Nome.ReadOnly = !valor;
             this.txt_Sigla.ReadOnly = !valor;
         }
@@ -84,7 +86,7 @@ namespace BusSpot.Cadastro
         private void BuscarSigla()
         {
             this.dataLista.DataSource = Estado_Classes.Buscar(this.txt_Buscar.Text);
-            this.OcultarColunas();
+          //  this.OcultarColunas();
             lbl_total.Text = "Total de Estados " + Convert.ToString(dataLista.Rows.Count);
         }
 
@@ -128,7 +130,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = Estado_Classes.Remover(Convert.ToInt16(Codigo));
+                            Resp = Estado_Classes.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -202,7 +204,7 @@ namespace BusSpot.Cadastro
                     }
                     else
                     {
-                        Resp = Estado_Classes.Editar(Convert.ToInt32(txt_IDESTADO.Text),txt_Nome.Text.Trim().ToUpper(), txt_Sigla.Text.ToUpper());
+                        Resp = Estado_Classes.Editar(Convert.ToInt32(txt_IDESTADO.Text),txt_Nome.Text.Trim(), txt_Sigla.Text.ToUpper());
                     }
 
                     if (Resp.Equals("OK"))
@@ -291,7 +293,7 @@ namespace BusSpot.Cadastro
 
         private void dataLista_DoubleClick(object sender, EventArgs e)
         {
-
+            this.txt_IDESTADO.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["ID"].Value);
             this.txt_Nome.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["nome"].Value);
             this.txt_Sigla.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["sigla"].Value);
             this.tabControl1.SelectedIndex = 1;

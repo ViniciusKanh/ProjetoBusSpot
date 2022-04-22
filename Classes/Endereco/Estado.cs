@@ -14,6 +14,8 @@ namespace Classes.Endereco
 
 		public String sigla { get; set; }
 
+		public string txtBuscar { get; set; }
+
 		//public Cidade cidade { get; private set; }
 
 
@@ -187,14 +189,14 @@ namespace Classes.Endereco
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 				
 
-				SqlParameter ParSigla_ESTADO = new SqlParameter();
-				ParSigla_ESTADO.ParameterName = "@Sigla";
-				ParSigla_ESTADO.SqlDbType = SqlDbType.VarChar;
-				ParSigla_ESTADO.Size = 2;
-				ParSigla_ESTADO.Value = estado.sigla;
-				SqlCmd.Parameters.Add(ParSigla_ESTADO);
+				SqlParameter Partextobuscar = new SqlParameter();
+				Partextobuscar.ParameterName = "@textobuscar";
+				Partextobuscar.SqlDbType = SqlDbType.VarChar;
+				Partextobuscar.Size = 2;
+				Partextobuscar.Value = estado.txtBuscar;
+				SqlCmd.Parameters.Add(Partextobuscar);
 
-				SqlDataAdapter SqlDat = new SqlDataAdapter();
+				SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
 				SqlDat.Fill(DtResultado);
 
 

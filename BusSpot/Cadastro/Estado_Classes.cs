@@ -43,7 +43,7 @@ namespace BusSpot
         {
 
             Estado obj = new();
-            obj.sigla = sigla;
+            obj.txtBuscar = sigla;
 
             return obj.Buscar_Estado(obj);
 
