@@ -27,10 +27,11 @@ namespace BusSpot
        
         }
 
-        public static string Editar(string nome, string sigla)
+        public static string Editar(int id, string nome, string sigla)
         {
 
             Estado obj = new();
+            obj.ID = id;
             obj.nome = nome;
             obj.sigla = sigla;
 
@@ -48,11 +49,11 @@ namespace BusSpot
 
         }
 
-        public static string Remover(string sigla)
+        public static string Remover(int id)
         {
 
             Estado obj = new();
-            obj.sigla = sigla;
+            obj.ID= id;
 
             return obj.Remover_Estado(obj);
 

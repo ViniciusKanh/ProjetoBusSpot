@@ -69,7 +69,7 @@ namespace BusSpot.Cadastro
         private void OcultarColunas()
         {
           this.dataLista.Columns[0].Visible = false;
-           // this.dataLista.Columns[1].Visible = false;
+          this.dataLista.Columns[1].Visible = false;
 
         }
 
@@ -120,15 +120,15 @@ namespace BusSpot.Cadastro
                 Opcao = MessageBox.Show("Deseja Realmente Apagar esse Estado","BusSpott",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
                 if(Opcao == DialogResult.OK)
                 {
-                    string nome;
+                    string Codigo;
                     string Resp = "";
 
                     foreach(DataGridViewRow row in dataLista.Rows)
                     {
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
-                            nome = Convert.ToString(row.Cells[1].Value);
-                            Resp = Estado_Classes.Remover(nome);
+                            Codigo = Convert.ToString(row.Cells[1].Value);
+                            Resp = Estado_Classes.Remover(Convert.ToInt16(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -202,7 +202,7 @@ namespace BusSpot.Cadastro
                     }
                     else
                     {
-                        Resp = Estado_Classes.Editar(txt_Nome.Text.Trim().ToUpper(), txt_Sigla.Text.ToUpper());
+                        Resp = Estado_Classes.Editar(Convert.ToInt32(txt_IDESTADO.Text),txt_Nome.Text.Trim().ToUpper(), txt_Sigla.Text.ToUpper());
                     }
 
                     if (Resp.Equals("OK"))
@@ -237,14 +237,12 @@ namespace BusSpot.Cadastro
 
         private void tabControl1_DoubleClick(object sender, EventArgs e)
         {
-            this.txt_Nome.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["nome"].Value);
-            this.txt_Sigla.Text = Convert.ToString( this.dataLista.CurrentRow.Cells["sigla"].Value);
-            this.tabControl1.SelectedIndex = 1;
+           
         }
 
         private void btn_Editar_Click(object sender, EventArgs e)
         {
-            if (this.txt_Nome.Text.EndsWith(""))
+            if (this.txt_Nome.Text.Equals(""))
             {
 
                 this.MensagemErro("Selecione um Registro para Inserir");
@@ -266,18 +264,7 @@ namespace BusSpot.Cadastro
             this.Limpar();
         }
 
-        private void chkk_deletar_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkk_deletar.Checked)
-            {
-                this.dataLista.Columns[0].Visible = true;
-            }
-            else
-            {
-                this.dataLista.Columns[0].Visible = false;
-            }
-        }
-
+       
         private void chkk_deletar_CheckedChanged_1(object sender, EventArgs e)
         {
 
@@ -289,6 +276,30 @@ namespace BusSpot.Cadastro
             {
                 this.dataLista.Columns[0].Visible = false;
             }
+
+        }
+
+        private void txt_Nome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Sigla_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataLista_DoubleClick(object sender, EventArgs e)
+        {
+
+            this.txt_Nome.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["nome"].Value);
+            this.txt_Sigla.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["sigla"].Value);
+            this.tabControl1.SelectedIndex = 1;
+
+        }
+
+        private void txt_IDESTADO_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

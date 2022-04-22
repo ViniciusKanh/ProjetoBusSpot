@@ -43,6 +43,8 @@
             this.Btn_Buscar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_IDESTADO = new System.Windows.Forms.TextBox();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Editar = new System.Windows.Forms.Button();
             this.btn_Novo = new System.Windows.Forms.Button();
@@ -171,6 +173,7 @@
             this.dataLista.Size = new System.Drawing.Size(405, 153);
             this.dataLista.TabIndex = 11;
             this.dataLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataLista_CellContentClick);
+            this.dataLista.DoubleClick += new System.EventHandler(this.dataLista_DoubleClick);
             // 
             // Deletar
             // 
@@ -210,6 +213,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_IDESTADO);
             this.groupBox1.Controls.Add(this.btn_Cancelar);
             this.groupBox1.Controls.Add(this.btn_Editar);
             this.groupBox1.Controls.Add(this.btn_Novo);
@@ -224,6 +229,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estados";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 15);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "ID";
+            // 
+            // txt_IDESTADO
+            // 
+            this.txt_IDESTADO.Location = new System.Drawing.Point(15, 37);
+            this.txt_IDESTADO.Name = "txt_IDESTADO";
+            this.txt_IDESTADO.Size = new System.Drawing.Size(75, 23);
+            this.txt_IDESTADO.TabIndex = 20;
+            this.txt_IDESTADO.TextChanged += new System.EventHandler(this.txt_IDESTADO_TextChanged);
             // 
             // btn_Cancelar
             // 
@@ -267,22 +289,24 @@
             // 
             // txt_Nome
             // 
-            this.txt_Nome.Location = new System.Drawing.Point(6, 37);
+            this.txt_Nome.Location = new System.Drawing.Point(96, 37);
             this.txt_Nome.Name = "txt_Nome";
-            this.txt_Nome.Size = new System.Drawing.Size(259, 23);
+            this.txt_Nome.Size = new System.Drawing.Size(169, 23);
             this.txt_Nome.TabIndex = 12;
+            this.txt_Nome.TextChanged += new System.EventHandler(this.txt_Nome_TextChanged);
             // 
             // txt_Sigla
             // 
             this.txt_Sigla.Location = new System.Drawing.Point(286, 37);
             this.txt_Sigla.Name = "txt_Sigla";
-            this.txt_Sigla.Size = new System.Drawing.Size(44, 23);
+            this.txt_Sigla.Size = new System.Drawing.Size(87, 23);
             this.txt_Sigla.TabIndex = 14;
+            this.txt_Sigla.TextChanged += new System.EventHandler(this.txt_Sigla_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 19);
+            this.label5.Location = new System.Drawing.Point(96, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 15);
             this.label5.TabIndex = 11;
@@ -369,5 +393,7 @@
         private Label lbl_total;
         private BindingSource conexaoDBBindingSource;
         private BindingSource conexaoDBBindingSource1;
+        private Label label2;
+        private TextBox txt_IDESTADO;
     }
 }

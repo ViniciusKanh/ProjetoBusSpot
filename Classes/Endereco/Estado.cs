@@ -8,6 +8,8 @@ namespace Classes.Endereco
 {
     public class Estado
     {
+		public int ID { get; set; }
+
 		public String nome { get; set; }
 
 		public String sigla { get; set; }
@@ -95,6 +97,11 @@ namespace Classes.Endereco
 				SqlCmd.CommandText = "Proc_Editar_ESTADO";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
+				SqlParameter ParID_ESTADO = new SqlParameter();
+				ParID_ESTADO.ParameterName = "@IDESTADO";
+				ParID_ESTADO.SqlDbType = SqlDbType.Int;
+				ParID_ESTADO.Value = estado.ID;
+				SqlCmd.Parameters.Add(ParID_ESTADO);
 
 				SqlParameter ParNome_ESTADO = new SqlParameter();
 				ParNome_ESTADO.ParameterName = "@Nome";
@@ -111,7 +118,7 @@ namespace Classes.Endereco
 				SqlCmd.Parameters.Add(ParSigla_ESTADO);
 
 
-				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Estado Não alterado";
+				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Edicao Não Concluida";
 
 
 
@@ -142,12 +149,11 @@ namespace Classes.Endereco
 				SqlCmd.CommandText = "Proc_Remover_ESTADO";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
-				SqlParameter ParSigla_ESTADO = new SqlParameter();
-				ParSigla_ESTADO.ParameterName = "@Sigla";
-				ParSigla_ESTADO.SqlDbType = SqlDbType.VarChar;
-				ParSigla_ESTADO.Size = 2;
-				ParSigla_ESTADO.Value = estado.sigla;
-				SqlCmd.Parameters.Add(ParSigla_ESTADO);
+				SqlParameter ParID_ESTADO = new SqlParameter();
+				ParID_ESTADO.ParameterName = "@IDESTADO";
+				ParID_ESTADO.SqlDbType = SqlDbType.Int;
+				ParID_ESTADO.Value = estado.ID;
+				SqlCmd.Parameters.Add(ParID_ESTADO);
 
 
 				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Estado Não Encontrado";
@@ -216,12 +222,11 @@ namespace Classes.Endereco
 			try
 			{
 				Sqlcon.ConnectionString = ConexaoDB.cn;
-				Sqlcon.Open();
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = Sqlcon;
 				SqlCmd.CommandText = "Proc_Mostrar_ESTADO";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
-				SqlDataAdapter SqlDat = new SqlDataAdapter();
+				SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
 				SqlDat.Fill(DtResultado);
 
 
