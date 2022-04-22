@@ -9,6 +9,7 @@ using BusSpot;
 using System.Data;
 using System.Data.SqlTypes;
 using System.Data.SqlClient;
+using BusSpot.Cadastro;
 
 
 namespace BusSpot
@@ -59,7 +60,8 @@ namespace BusSpot
 
         public static DataTable Mostrar()
         {
-            return new Classes.Endereco.Estado().Mostrar_Estado();
+            return new Estado().Mostrar_Estado();
+           
 
         }
     }

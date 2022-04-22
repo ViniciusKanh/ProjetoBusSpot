@@ -175,13 +175,11 @@ namespace Classes.Endereco
 			try
 			{
 				Sqlcon.ConnectionString = ConexaoDB.cn;
-				Sqlcon.Open();
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = Sqlcon;
 				SqlCmd.CommandText = "Proc_Buscar_ESTADO";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
-				SqlDataAdapter SqlDat = new SqlDataAdapter();
-				SqlDat.Fill(DtResultado);
+				
 
 				SqlParameter ParSigla_ESTADO = new SqlParameter();
 				ParSigla_ESTADO.ParameterName = "@Sigla";
@@ -189,6 +187,9 @@ namespace Classes.Endereco
 				ParSigla_ESTADO.Size = 2;
 				ParSigla_ESTADO.Value = estado.sigla;
 				SqlCmd.Parameters.Add(ParSigla_ESTADO);
+
+				SqlDataAdapter SqlDat = new SqlDataAdapter();
+				SqlDat.Fill(DtResultado);
 
 
 
@@ -222,11 +223,6 @@ namespace Classes.Endereco
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 				SqlDataAdapter SqlDat = new SqlDataAdapter();
 				SqlDat.Fill(DtResultado);
-
-
-
-
-
 
 
 			}
