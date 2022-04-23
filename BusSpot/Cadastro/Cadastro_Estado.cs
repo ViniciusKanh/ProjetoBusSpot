@@ -102,7 +102,7 @@ namespace BusSpot.Cadastro
 
         private void btn_Sair_Click(object sender, EventArgs e)
         {
-            
+            Close();
         }
             private void textBox1_TextChanged(object sender, EventArgs e)
         {

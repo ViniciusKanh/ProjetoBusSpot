@@ -22,7 +22,8 @@ namespace BusSpot
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
-
+            FrmMenu form = new FrmMenu();
+            form.Show();
         }
     }
 }
