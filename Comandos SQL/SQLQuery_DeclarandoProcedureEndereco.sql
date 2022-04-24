@@ -1,10 +1,11 @@
+select ID, Nome from Tipo_logradouro order by Nome
 
 
 use BusSpot
 go
 Create Procedure Proc_Mostrar_Endereco
 as
-select Endereco.ID, Endereco.CEP,Endereco.ID_TipoLogradouro as 'Tipo de Logradouro', Endereco.ID_Logradouro as 'Logradouro',Endereco.ID_Bairro as 'Bairro',Endereco.ID_Cidade as 'Cidade', Estado.Sigla as 'Estado'
+select Endereco.ID, Endereco.CEP,Tipo_logradouro.Nome as 'Tipo de Logradouro', Logradouro.Nome as 'Logradouro', Bairro.Nome as 'Bairro', CIDADE.Nome as 'Cidade', Estado.Sigla as 'Estado'
 from Endereco, CIDADE, Estado, Bairro, Tipo_logradouro, Logradouro 
 where Endereco.ID_Bairro = Bairro.ID and Endereco.ID_Cidade = CIDADE.ID and Endereco.ID_Logradouro = Logradouro.ID and Endereco.ID_TipoLogradouro = Tipo_logradouro.ID and CIDADE.ID_ESTADO = Estado.ID
 order by CEP
@@ -38,7 +39,7 @@ go
 use BusSpot
 go
 Create Procedure Proc_Buscar_Endereco 
-@textobuscar  varchar(2)
+@textobuscar  varchar(50)
 as
 select * from Endereco  where CEP like @textobuscar +'%'
 go

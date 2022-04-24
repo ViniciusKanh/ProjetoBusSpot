@@ -35,6 +35,7 @@
             this.estadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bairroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoDeLogradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cEPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,7 +84,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tipoDeLogradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -133,61 +133,68 @@
             this.logradouroToolStripMenuItem,
             this.cEPToolStripMenuItem});
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
-            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.funcionáriosToolStripMenuItem.Text = "Endereco";
             this.funcionáriosToolStripMenuItem.Click += new System.EventHandler(this.FuncionáriosToolStripMenuItem_Click);
             // 
             // estadoToolStripMenuItem
             // 
             this.estadoToolStripMenuItem.Name = "estadoToolStripMenuItem";
-            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.estadoToolStripMenuItem.Text = "Estado";
             this.estadoToolStripMenuItem.Click += new System.EventHandler(this.estadoToolStripMenuItem_Click);
             // 
             // cidadeToolStripMenuItem
             // 
             this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
-            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.cidadeToolStripMenuItem.Text = "Cidade";
             this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click);
             // 
             // bairroToolStripMenuItem
             // 
             this.bairroToolStripMenuItem.Name = "bairroToolStripMenuItem";
-            this.bairroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bairroToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.bairroToolStripMenuItem.Text = "Bairro";
             this.bairroToolStripMenuItem.Click += new System.EventHandler(this.bairroToolStripMenuItem_Click);
+            // 
+            // tipoDeLogradouroToolStripMenuItem
+            // 
+            this.tipoDeLogradouroToolStripMenuItem.Name = "tipoDeLogradouroToolStripMenuItem";
+            this.tipoDeLogradouroToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.tipoDeLogradouroToolStripMenuItem.Text = "Tipo de Logradouro";
+            this.tipoDeLogradouroToolStripMenuItem.Click += new System.EventHandler(this.tipoDeLogradouroToolStripMenuItem_Click);
             // 
             // logradouroToolStripMenuItem
             // 
             this.logradouroToolStripMenuItem.Name = "logradouroToolStripMenuItem";
-            this.logradouroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logradouroToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.logradouroToolStripMenuItem.Text = "Logradouro";
             this.logradouroToolStripMenuItem.Click += new System.EventHandler(this.logradouroToolStripMenuItem_Click);
             // 
             // cEPToolStripMenuItem
             // 
             this.cEPToolStripMenuItem.Name = "cEPToolStripMenuItem";
-            this.cEPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cEPToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.cEPToolStripMenuItem.Text = "CEP";
             this.cEPToolStripMenuItem.Click += new System.EventHandler(this.cEPToolStripMenuItem_Click);
             // 
             // empresaToolStripMenuItem
             // 
             this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
-            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.empresaToolStripMenuItem.Text = "Empresa";
             // 
             // linhaToolStripMenuItem
             // 
             this.linhaToolStripMenuItem.Name = "linhaToolStripMenuItem";
-            this.linhaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.linhaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.linhaToolStripMenuItem.Text = "Linha";
             // 
             // onibusToolStripMenuItem
             // 
             this.onibusToolStripMenuItem.Name = "onibusToolStripMenuItem";
-            this.onibusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.onibusToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.onibusToolStripMenuItem.Text = "Onibus";
             // 
             // MenuProdutos
@@ -711,13 +718,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "13:00:00";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // tipoDeLogradouroToolStripMenuItem
-            // 
-            this.tipoDeLogradouroToolStripMenuItem.Name = "tipoDeLogradouroToolStripMenuItem";
-            this.tipoDeLogradouroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tipoDeLogradouroToolStripMenuItem.Text = "Tipo de Logradouro";
-            this.tipoDeLogradouroToolStripMenuItem.Click += new System.EventHandler(this.tipoDeLogradouroToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
