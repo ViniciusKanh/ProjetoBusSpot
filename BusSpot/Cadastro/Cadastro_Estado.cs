@@ -294,13 +294,68 @@ namespace BusSpot.Cadastro
         private void dataLista_DoubleClick(object sender, EventArgs e)
         {
             this.txt_IDESTADO.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["ID"].Value);
-            this.txt_Nome.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["nome"].Value);
+            this.txt_Nome.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["NOME"].Value);
             this.txt_Sigla.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["sigla"].Value);
             this.tabControl1.SelectedIndex = 1;
 
         }
 
         private void txt_IDESTADO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_total_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ttMensagem_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void conexaoDBBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void conexaoDBBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_IDESTADO_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

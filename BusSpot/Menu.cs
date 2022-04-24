@@ -35,7 +35,8 @@
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            Cadastro.Cadastro_Endereco form = new Cadastro.Cadastro_Endereco();
+            form.Show();
         }
 
         private void NovoProdutoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -291,6 +292,37 @@
         private void estadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Cadastro.Cadastro_Estado form = new Cadastro.Cadastro_Estado();
+            form.Show();
+        }
+
+        private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro.Cadastro_Cidade form = new Cadastro.Cadastro_Cidade();
+            form.Show();
+        }
+
+        private void bairroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro.Cadastro_Bairro form = new Cadastro.Cadastro_Bairro();
+            form.Show();
+        }
+
+        private void logradouroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro.Cadastro_Logradouro form = new Cadastro.Cadastro_Logradouro();
+            form.Show();
+        }
+
+        private void tipoDeLogradouroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro.Cadastro_TipoLogradouro form = new Cadastro.Cadastro_TipoLogradouro();
+            form.Show();
+
+        }
+
+        private void cEPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro.Cadastro_Endereco form = new Cadastro.Cadastro_Endereco();
             form.Show();
         }
     }

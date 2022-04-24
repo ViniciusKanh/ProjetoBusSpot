@@ -83,6 +83,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tipoDeLogradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -128,6 +129,7 @@
             this.estadoToolStripMenuItem,
             this.cidadeToolStripMenuItem,
             this.bairroToolStripMenuItem,
+            this.tipoDeLogradouroToolStripMenuItem,
             this.logradouroToolStripMenuItem,
             this.cEPToolStripMenuItem});
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
@@ -147,24 +149,28 @@
             this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
             this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cidadeToolStripMenuItem.Text = "Cidade";
+            this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click);
             // 
             // bairroToolStripMenuItem
             // 
             this.bairroToolStripMenuItem.Name = "bairroToolStripMenuItem";
             this.bairroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bairroToolStripMenuItem.Text = "Bairro";
+            this.bairroToolStripMenuItem.Click += new System.EventHandler(this.bairroToolStripMenuItem_Click);
             // 
             // logradouroToolStripMenuItem
             // 
             this.logradouroToolStripMenuItem.Name = "logradouroToolStripMenuItem";
             this.logradouroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logradouroToolStripMenuItem.Text = "Logradouro";
+            this.logradouroToolStripMenuItem.Click += new System.EventHandler(this.logradouroToolStripMenuItem_Click);
             // 
             // cEPToolStripMenuItem
             // 
             this.cEPToolStripMenuItem.Name = "cEPToolStripMenuItem";
             this.cEPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cEPToolStripMenuItem.Text = "CEP";
+            this.cEPToolStripMenuItem.Click += new System.EventHandler(this.cEPToolStripMenuItem_Click);
             // 
             // empresaToolStripMenuItem
             // 
@@ -706,6 +712,13 @@
             this.label1.Text = "13:00:00";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // tipoDeLogradouroToolStripMenuItem
+            // 
+            this.tipoDeLogradouroToolStripMenuItem.Name = "tipoDeLogradouroToolStripMenuItem";
+            this.tipoDeLogradouroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipoDeLogradouroToolStripMenuItem.Text = "Tipo de Logradouro";
+            this.tipoDeLogradouroToolStripMenuItem.Click += new System.EventHandler(this.tipoDeLogradouroToolStripMenuItem_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -795,5 +808,6 @@
         private ToolStripMenuItem onibusToolStripMenuItem;
         private ToolStripMenuItem viagensProgramadasToolStripMenuItem;
         private ToolStripMenuItem viagensRealizadasToolStripMenuItem;
+        private ToolStripMenuItem tipoDeLogradouroToolStripMenuItem;
     }
 }

@@ -49,13 +49,13 @@
             this.btn_Novo = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.txt_Nome = new System.Windows.Forms.TextBox();
-            this.txt_Sigla = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.errorIcone = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensagem = new System.Windows.Forms.ToolTip(this.components);
             this.conexaoDBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.conexaoDBBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_Sigla = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLista)).BeginInit();
@@ -113,6 +113,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(438, 304);
             this.tabControl1.TabIndex = 8;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             this.tabControl1.DoubleClick += new System.EventHandler(this.tabControl1_DoubleClick);
             // 
             // tabPage1
@@ -142,6 +143,7 @@
             this.lbl_total.Size = new System.Drawing.Size(32, 15);
             this.lbl_total.TabIndex = 13;
             this.lbl_total.Text = "Total";
+            this.lbl_total.Click += new System.EventHandler(this.lbl_total_Click);
             // 
             // chkk_deletar
             // 
@@ -199,6 +201,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Configurações";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // groupBox1
             // 
@@ -218,6 +221,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estados";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
@@ -227,6 +231,7 @@
             this.label2.Size = new System.Drawing.Size(18, 15);
             this.label2.TabIndex = 21;
             this.label2.Text = "ID";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txt_IDESTADO
             // 
@@ -284,14 +289,6 @@
             this.txt_Nome.TabIndex = 12;
             this.txt_Nome.TextChanged += new System.EventHandler(this.txt_Nome_TextChanged);
             // 
-            // txt_Sigla
-            // 
-            this.txt_Sigla.Location = new System.Drawing.Point(286, 37);
-            this.txt_Sigla.Name = "txt_Sigla";
-            this.txt_Sigla.Size = new System.Drawing.Size(87, 23);
-            this.txt_Sigla.TabIndex = 14;
-            this.txt_Sigla.TextChanged += new System.EventHandler(this.txt_Sigla_TextChanged);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -300,6 +297,7 @@
             this.label5.Size = new System.Drawing.Size(95, 15);
             this.label5.TabIndex = 11;
             this.label5.Text = "Nome do Estado";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -309,6 +307,7 @@
             this.label6.Size = new System.Drawing.Size(87, 15);
             this.label6.TabIndex = 13;
             this.label6.Text = "Sigla do Estado";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // errorIcone
             // 
@@ -317,14 +316,25 @@
             // ttMensagem
             // 
             this.ttMensagem.IsBalloon = true;
+            this.ttMensagem.Popup += new System.Windows.Forms.PopupEventHandler(this.ttMensagem_Popup);
             // 
             // conexaoDBBindingSource
             // 
             this.conexaoDBBindingSource.DataSource = typeof(Classes.ConexaoDB);
+            this.conexaoDBBindingSource.CurrentChanged += new System.EventHandler(this.conexaoDBBindingSource_CurrentChanged);
             // 
             // conexaoDBBindingSource1
             // 
             this.conexaoDBBindingSource1.DataSource = typeof(Classes.ConexaoDB);
+            this.conexaoDBBindingSource1.CurrentChanged += new System.EventHandler(this.conexaoDBBindingSource1_CurrentChanged);
+            // 
+            // txt_Sigla
+            // 
+            this.txt_Sigla.Location = new System.Drawing.Point(286, 37);
+            this.txt_Sigla.Name = "txt_Sigla";
+            this.txt_Sigla.Size = new System.Drawing.Size(87, 23);
+            this.txt_Sigla.TabIndex = 14;
+            this.txt_Sigla.TextChanged += new System.EventHandler(this.txt_Sigla_TextChanged);
             // 
             // Cadastro_Estado
             // 
@@ -373,7 +383,6 @@
         private Button btn_Novo;
         private Button btn_Salvar;
         private TextBox txt_Nome;
-        private TextBox txt_Sigla;
         private Label label5;
         private Label label6;
         private ErrorProvider errorIcone;
@@ -383,5 +392,6 @@
         private BindingSource conexaoDBBindingSource1;
         private Label label2;
         private TextBox txt_IDESTADO;
+        private TextBox txt_Sigla;
     }
 }
