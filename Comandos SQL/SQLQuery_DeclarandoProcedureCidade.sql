@@ -1,15 +1,4 @@
-select ID, Nome from Bairro order by Nome
 
-select* from CIDADE
-order by Nome
-
-select* from Bairro order by Nome
-
-select Estado.ID, Estado.Nome, Estado.Sigla from Estado order by Estado.Sigla
-
-select CIDADE.ID, CIDADE.Nome as Cidade, Estado.Sigla as Estado from CIDADE, Estado where Cidade.ID_ESTADO = Estado.ID order by CIDADE.Nome
-
-insert CIDADE (Nome,ID_ESTADO) values ('Salvador',5)
 
 use BusSpot
 go
