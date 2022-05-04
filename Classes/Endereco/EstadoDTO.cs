@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace Classes.Endereco
 {
-    public class Estado
+    public class EstadoDTO
     {
 		public int ID { get; set; }
 
@@ -19,12 +19,12 @@ namespace Classes.Endereco
 		//public Cidade cidade { get; private set; }
 
 
-		public Estado()
+		public EstadoDTO()
         {
       
         }
 
-        public Estado(string nome, string sigla)
+        public EstadoDTO(string nome, string sigla)
         {
             this.nome = nome;
             this.sigla = sigla;
@@ -32,7 +32,7 @@ namespace Classes.Endereco
 
 
         ///  
-        public string Incluir_Estado(Estado estado)
+        public string Incluir_Estado(EstadoDTO estado)
 		{
 			string Resp;
 
@@ -84,7 +84,7 @@ namespace Classes.Endereco
 			return Resp;
 		}
 
-		public string Alterar_Estado(Estado estado)
+		public string Alterar_Estado(EstadoDTO estado)
 		{
 			string Resp;
 
@@ -136,7 +136,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public string Remover_Estado(Estado estado)
+		public string Remover_Estado(EstadoDTO estado)
 		{
 			string Resp;
 
@@ -174,7 +174,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public DataTable Buscar_Estado(Estado estado)
+		public DataTable Buscar_Estado(EstadoDTO estado)
 		{
 			DataTable DtResultado = new DataTable("Estado");
 

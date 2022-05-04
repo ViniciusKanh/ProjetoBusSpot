@@ -13,12 +13,12 @@ using BusSpot.Cadastro;
 
 namespace BusSpot.Cadastro
 {
-    public class Bairro_Classes
+    public class Bairro_Business
     {
         public static string Inserir(string nome)
         {
 
-            Bairro obj = new();
+            BairroDTO obj = new();
             obj.nome = nome;
 
 
@@ -29,7 +29,7 @@ namespace BusSpot.Cadastro
         public static string Editar(int id, string nome)
         {
 
-            Bairro obj = new();
+            BairroDTO obj = new();
             obj.ID = id;
             obj.nome = nome;
 
@@ -41,7 +41,7 @@ namespace BusSpot.Cadastro
         public static DataTable Buscar(string nome)
         {
 
-            Bairro obj = new();
+            BairroDTO obj = new();
             obj.txtBuscar = nome;
 
             return obj.Buscar_Bairro(obj);
@@ -51,7 +51,7 @@ namespace BusSpot.Cadastro
         public static string Remover(int id)
         {
 
-            Bairro obj = new();
+            BairroDTO obj = new();
             obj.ID = id;
 
             return obj.Remover_Bairro(obj);
@@ -60,7 +60,7 @@ namespace BusSpot.Cadastro
 
         public static DataTable Mostrar()
         {
-            return new Bairro().Mostrar_Bairro();
+            return new BairroDTO().Mostrar_Bairro();
 
 
         }

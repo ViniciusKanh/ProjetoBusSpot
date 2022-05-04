@@ -14,7 +14,7 @@ namespace Classes.Onibus
 	{
 		public String N_Onibus { get; private set; }
 
-		public Empresa empresa { get; private set; }
+		public EmpresaDTO empresa { get; private set; }
 
 		public Ponto ponto { get; private set; }
 
@@ -26,7 +26,7 @@ namespace Classes.Onibus
 
 		public Pagamento pagamento { get; private set; }
 
-		public Empresa Empresa { get; private set; }
+		public EmpresaDTO Empresa { get; private set; }
 
 		public Comodidades Comodidades { get; private set; }
 

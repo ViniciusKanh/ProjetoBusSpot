@@ -6,20 +6,20 @@ using System.Data.SqlClient;
 
 namespace Classes.Endereco
 {
-	public class Bairro
+	public class BairroDTO
 	{
 		public int ID { get; set; }
 		public String nome { get;  set; }
 		public string txtBuscar { get; set; }
 
-		public ICollection<Endereco> endereço { get; set; }
+		public ICollection<EnderecoDTO> endereço { get; set; }
 
-		public Bairro()
+		public BairroDTO()
 		{
 		}
 
 		///  
-		public string Incluir_Bairro(Bairro bairro)
+		public string Incluir_Bairro(BairroDTO bairro)
 		{
 
 			string Resp;
@@ -88,7 +88,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public string Alterar_Bairro(Bairro bairro)
+		public string Alterar_Bairro(BairroDTO bairro)
 		{
 			string Resp;
 
@@ -134,7 +134,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public string Remover_Bairro(Bairro bairro)
+		public string Remover_Bairro(BairroDTO bairro)
 		{
 			string Resp;
 
@@ -172,7 +172,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public DataTable Buscar_Bairro(Bairro bairro)
+		public DataTable Buscar_Bairro(BairroDTO bairro)
 		{
 			DataTable DtResultado = new DataTable("Bairro");
 

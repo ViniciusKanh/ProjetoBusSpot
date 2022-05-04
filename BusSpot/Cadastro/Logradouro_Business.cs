@@ -13,12 +13,12 @@ using BusSpot.Cadastro;
 
 namespace BusSpot.Cadastro
 {
-    public class Logradouro_Classes
+    public class Logradouro_Business
     {
         public static string Inserir(string nome)
         {
 
-            Logradouro obj = new();
+            LogradouroDTO obj = new();
             obj.nome = nome;
 
 
@@ -29,7 +29,7 @@ namespace BusSpot.Cadastro
         public static string Editar(int id, string nome)
         {
 
-            Logradouro obj = new();
+            LogradouroDTO obj = new();
             obj.ID = id;
             obj.nome = nome;
 
@@ -41,7 +41,7 @@ namespace BusSpot.Cadastro
         public static DataTable Buscar(string nome)
         {
 
-            Logradouro obj = new();
+            LogradouroDTO obj = new();
             obj.txtBuscar = nome;
 
             return obj.Buscar_Logradouro(obj);
@@ -51,7 +51,7 @@ namespace BusSpot.Cadastro
         public static string Remover(int id)
         {
 
-            Logradouro obj = new();
+            LogradouroDTO obj = new();
             obj.ID = id;
 
             return obj.Remover_Logradouro(obj);
@@ -60,7 +60,7 @@ namespace BusSpot.Cadastro
 
         public static DataTable Mostrar()
         {
-            return new Logradouro().Mostrar_Logradouro();
+            return new LogradouroDTO().Mostrar_Logradouro();
 
 
         }

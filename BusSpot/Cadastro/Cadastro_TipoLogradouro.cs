@@ -75,14 +75,14 @@ namespace BusSpot.Cadastro
 
         private void BuscarTipoLogradouro()
         {
-            this.dataLista.DataSource = TipoLogradouro_Classes.Buscar(this.txt_Buscar.Text);
+            this.dataLista.DataSource = TipoLogradouro_Business.Buscar(this.txt_Buscar.Text);
             //  this.OcultarColunas();
             lbl_total.Text = "Total de Tipo de Logradouros " + Convert.ToString(dataLista.Rows.Count);
         }
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = TipoLogradouro_Classes.Mostrar();
+            this.dataLista.DataSource = TipoLogradouro_Business.Mostrar();
             this.OcultarColunas();
             lbl_total.Text = "Total de Tipo de Logradouros " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -155,11 +155,11 @@ namespace BusSpot.Cadastro
                 {
                     if (this.eNovo)
                     {
-                        Resp = TipoLogradouro_Classes.Inserir(txt_Nome.Text.Trim());
+                        Resp = TipoLogradouro_Business.Inserir(txt_Nome.Text.Trim());
                     }
                     else
                     {
-                        Resp = TipoLogradouro_Classes.Editar(Convert.ToInt32(txt_IDTipoLogradouro.Text), txt_Nome.Text.Trim());
+                        Resp = TipoLogradouro_Business.Editar(Convert.ToInt32(txt_IDTipoLogradouro.Text), txt_Nome.Text.Trim());
                     }
 
                     if (Resp.Equals("OK"))
@@ -260,7 +260,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = TipoLogradouro_Classes.Remover(Convert.ToInt32(Codigo));
+                            Resp = TipoLogradouro_Business.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {

@@ -25,7 +25,7 @@ namespace Classes.Transporte
 
 		public ICollection<Paradas> paradas { get; private set; }
 
-		public Empresa empresa { get; private set; }
+		public EmpresaDTO empresa { get; private set; }
 
 		public Linhas()
         {

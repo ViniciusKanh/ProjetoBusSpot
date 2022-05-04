@@ -81,14 +81,14 @@ namespace BusSpot.Cadastro
 
         private void BuscarEndereco()
         {
-            this.dataLista.DataSource = Endereco_Classes.Buscar(this.txt_Buscar.Text);
+            this.dataLista.DataSource = Endereco_Business.Buscar(this.txt_Buscar.Text);
             //  this.OcultarColunas();
             lbl_total.Text = "Total de Endereços " + Convert.ToString(dataLista.Rows.Count);
         }
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = Endereco_Classes.Mostrar();
+            this.dataLista.DataSource = Endereco_Business.Mostrar();
             this.OcultarColunas();
             lbl_total.Text = "Total de Endereços " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -108,7 +108,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = Endereco_Classes.Remover(Convert.ToInt32(Codigo));
+                            Resp = Endereco_Business.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -209,11 +209,11 @@ namespace BusSpot.Cadastro
                 {
                     if (this.eNovo)
                     {
-                        Resp = Endereco_Classes.Inserir(txt_CEP.Text.Trim(), Convert.ToInt32(cb_IDBAIRRO.SelectedValue), Convert.ToInt32(cb_IDCIDADE.SelectedValue), Convert.ToInt32(cb_IDLOGRADOURO.SelectedValue), Convert.ToInt32(cb_IDTIPOLOGRADOURO.SelectedValue));
+                        Resp = Endereco_Business.Inserir(txt_CEP.Text.Trim(), Convert.ToInt32(cb_IDBAIRRO.SelectedValue), Convert.ToInt32(cb_IDCIDADE.SelectedValue), Convert.ToInt32(cb_IDLOGRADOURO.SelectedValue), Convert.ToInt32(cb_IDTIPOLOGRADOURO.SelectedValue));
                     }
                     else
                     {
-                        Resp = Endereco_Classes.Editar(Convert.ToInt32(txt_IDCEP.Text), txt_CEP.Text.Trim(), Convert.ToInt32(cb_IDBAIRRO.SelectedValue), Convert.ToInt32(cb_IDCIDADE.SelectedValue), Convert.ToInt32(cb_IDLOGRADOURO.SelectedValue), Convert.ToInt32(cb_IDTIPOLOGRADOURO.SelectedValue));
+                        Resp = Endereco_Business.Editar(Convert.ToInt32(txt_IDCEP.Text), txt_CEP.Text.Trim(), Convert.ToInt32(cb_IDBAIRRO.SelectedValue), Convert.ToInt32(cb_IDCIDADE.SelectedValue), Convert.ToInt32(cb_IDLOGRADOURO.SelectedValue), Convert.ToInt32(cb_IDTIPOLOGRADOURO.SelectedValue));
                     }
 
                     if (Resp.Equals("OK"))

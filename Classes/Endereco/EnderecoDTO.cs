@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace Classes.Endereco
 {
-	public class Endereco 
+	public class EnderecoDTO 
 {
 		public int ID { get; set; }
 		public String cep { get; set; }
@@ -20,13 +20,13 @@ namespace Classes.Endereco
 
      
 
-     public Endereco()
+     public EnderecoDTO()
         {
         }
 
 
         ///  
-     public string Incluir_cep(Endereco endereco)
+     public string Incluir_cep(EnderecoDTO endereco)
 	{
 			string Resp;
 
@@ -122,7 +122,7 @@ namespace Classes.Endereco
 
 			}
 	///  
-	public string Remover_cep(Endereco endereco)
+	public string Remover_cep(EnderecoDTO endereco)
 	{
 
 			string Resp;
@@ -162,7 +162,7 @@ namespace Classes.Endereco
 		}
 
 	///  
-	public string Alterar_cep(Endereco endereco)
+	public string Alterar_cep(EnderecoDTO endereco)
 	{
 			string Resp;
 
@@ -233,7 +233,7 @@ namespace Classes.Endereco
 		}
 
 	///  
-	public DataTable Buscar_ViaCEP(Endereco endereco)
+	public DataTable Buscar_ViaCEP(EnderecoDTO endereco)
 	{
 			DataTable DtResultado = new DataTable("Endereco");
 

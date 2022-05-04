@@ -2,23 +2,23 @@ using System.Data;
 using System.Data.SqlTypes;
 using System.Data.SqlClient;
 
-
 namespace Classes.Endereco
 {
-	public class Logradouro
+	public class TipoLogradouro
 	{
 		public int ID { get; set; }
 		public String nome { get; set; }
 		public string txtBuscar { get; set; }
 
-		public ICollection<Endereco> endereço { get; set; }
+		public EnderecoDTO endereço { get; private set; }
 
-		public Logradouro()
-		{
-		}
+		public TipoLogradouro()
+        {
+        }
 
-		///  
-		public string Incluir_Logradouro(Logradouro logradouro)
+
+        ///  
+        public string Incluir_TipoLogradouro(TipoLogradouro tipoLogradouro)
 		{
 			string Resp;
 
@@ -30,17 +30,17 @@ namespace Classes.Endereco
 				Sqlcon.Open();
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = Sqlcon;
-				SqlCmd.CommandText = "Proc_Inserir_Logradouro";
+				SqlCmd.CommandText = "Proc_Inserir_TipoLogradouro";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
-				SqlParameter ParNome_LOGRADOURO = new SqlParameter();
-				ParNome_LOGRADOURO.ParameterName = "@Nome";
-				ParNome_LOGRADOURO.SqlDbType = SqlDbType.VarChar;
-				ParNome_LOGRADOURO.Size = 50;
-				ParNome_LOGRADOURO.Value = nome;
-				SqlCmd.Parameters.Add(ParNome_LOGRADOURO);
+				SqlParameter ParNome_TIPOLOGRADOURO = new SqlParameter();
+				ParNome_TIPOLOGRADOURO.ParameterName = "@Nome";
+				ParNome_TIPOLOGRADOURO.SqlDbType = SqlDbType.VarChar;
+				ParNome_TIPOLOGRADOURO.Size = 50;
+				ParNome_TIPOLOGRADOURO.Value = nome;
+				SqlCmd.Parameters.Add(ParNome_TIPOLOGRADOURO);
 
-				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Logradouro Não Inserido";
+				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Tipo de Logradouro Não Inserido";
 
 
 
@@ -56,10 +56,9 @@ namespace Classes.Endereco
 			return Resp;
 		}
 
-
-		public DataTable Mostrar_Logradouro()
+		public DataTable Mostrar_TipoLogradouro()
 		{
-			DataTable DtResultado = new DataTable("Logradouro");
+			DataTable DtResultado = new DataTable("Tipo de Logradouro");
 
 			SqlConnection Sqlcon = new SqlConnection();
 
@@ -68,7 +67,7 @@ namespace Classes.Endereco
 				Sqlcon.ConnectionString = ConexaoDB.cn;
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = Sqlcon;
-				SqlCmd.CommandText = "Proc_Mostrar_Logradouro";
+				SqlCmd.CommandText = "Proc_Mostrar_TipoLogradouro";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 				SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
 				SqlDat.Fill(DtResultado);
@@ -87,7 +86,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public string Alterar_Logradouro(Logradouro logradouro)
+		public string Remover_TipoLogradouro(TipoLogradouro tipoLogradouro)
 		{
 			string Resp;
 
@@ -99,23 +98,59 @@ namespace Classes.Endereco
 				Sqlcon.Open();
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = Sqlcon;
-				SqlCmd.CommandText = "Proc_Alterar_Logradouro";
+				SqlCmd.CommandText = "Proc_Remover_TipoLogradouro";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
-				SqlParameter ParID_LOGRADOURO = new SqlParameter();
-				ParID_LOGRADOURO.ParameterName = "@ID";
-				ParID_LOGRADOURO.SqlDbType = SqlDbType.Int;
-				ParID_LOGRADOURO.Value = ID;
-				SqlCmd.Parameters.Add(ParID_LOGRADOURO);
+				SqlParameter ParID_TIPOLOGRADOURO = new SqlParameter();
+				ParID_TIPOLOGRADOURO.ParameterName = "@ID";
+				ParID_TIPOLOGRADOURO.SqlDbType = SqlDbType.Int;
+				ParID_TIPOLOGRADOURO.Value = ID;
+				SqlCmd.Parameters.Add(ParID_TIPOLOGRADOURO);
 
 
-				SqlParameter ParNome_LOGRADOURO = new SqlParameter();
-				ParNome_LOGRADOURO.ParameterName = "@Nome";
-				ParNome_LOGRADOURO.SqlDbType = SqlDbType.VarChar;
-				ParNome_LOGRADOURO.Size = 50;
-				ParNome_LOGRADOURO.Value = nome;
-				SqlCmd.Parameters.Add(ParNome_LOGRADOURO);
+				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Tipo de Logradouro Não Encontrado";
 
+
+
+			}
+			catch (Exception error)
+			{
+
+				Resp = error.Message;
+			}
+
+			finally { if (Sqlcon.State == ConnectionState.Open) Sqlcon.Close(); }
+			return Resp;
+		}
+
+		///  
+		public string Alterar_TipoLogradouro(TipoLogradouro tipoLogradouro)
+		{
+			string Resp;
+
+			SqlConnection Sqlcon = new SqlConnection();
+
+			try
+			{
+				Sqlcon.ConnectionString = ConexaoDB.cn;
+				Sqlcon.Open();
+				SqlCommand SqlCmd = new SqlCommand();
+				SqlCmd.Connection = Sqlcon;
+				SqlCmd.CommandText = "Proc_Alterar_TipoLogradouro";
+				SqlCmd.CommandType = CommandType.StoredProcedure;
+
+				SqlParameter ParID_TIPOLOGRADOURO = new SqlParameter();
+				ParID_TIPOLOGRADOURO.ParameterName = "@ID";
+				ParID_TIPOLOGRADOURO.SqlDbType = SqlDbType.Int;
+				ParID_TIPOLOGRADOURO.Value = ID;
+				SqlCmd.Parameters.Add(ParID_TIPOLOGRADOURO);
+
+				SqlParameter ParNome_TIPOLOGRADOURO = new SqlParameter();
+				ParNome_TIPOLOGRADOURO.ParameterName = "@Nome";
+				ParNome_TIPOLOGRADOURO.SqlDbType = SqlDbType.VarChar;
+				ParNome_TIPOLOGRADOURO.Size = 50;
+				ParNome_TIPOLOGRADOURO.Value = nome;
+				SqlCmd.Parameters.Add(ParNome_TIPOLOGRADOURO);
 
 				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Edicao Não Concluida";
 
@@ -133,47 +168,8 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public string Remover_Logradouro(Logradouro logradouro)
+		public DataTable Buscar_TipoLogradouro(TipoLogradouro tipoLogradouro)
 		{
-			string Resp;
-
-			SqlConnection Sqlcon = new SqlConnection();
-
-			try
-			{
-				Sqlcon.ConnectionString = ConexaoDB.cn;
-				Sqlcon.Open();
-				SqlCommand SqlCmd = new SqlCommand();
-				SqlCmd.Connection = Sqlcon;
-				SqlCmd.CommandText = "Proc_Remover_Logradouro";
-				SqlCmd.CommandType = CommandType.StoredProcedure;
-
-				SqlParameter ParID_LOGRADOURO = new SqlParameter();
-				ParID_LOGRADOURO.ParameterName = "@ID";
-				ParID_LOGRADOURO.SqlDbType = SqlDbType.Int;
-				ParID_LOGRADOURO.Value = ID;
-				SqlCmd.Parameters.Add(ParID_LOGRADOURO);
-
-
-				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Logradouro Não Encontrado";
-
-
-
-			}
-			catch (Exception error)
-			{
-
-				Resp = error.Message;
-			}
-
-			finally { if (Sqlcon.State == ConnectionState.Open) Sqlcon.Close(); }
-			return Resp;
-		}
-
-		///  
-		public DataTable Buscar_Logradouro(Logradouro logradouro)
-		{
-
 			DataTable DtResultado = new DataTable("Logradouro");
 
 			SqlConnection Sqlcon = new SqlConnection();
@@ -183,7 +179,7 @@ namespace Classes.Endereco
 				Sqlcon.ConnectionString = ConexaoDB.cn;
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = Sqlcon;
-				SqlCmd.CommandText = "Proc_Buscar_Logradouro";
+				SqlCmd.CommandText = "Proc_Buscar_TipoLogradouro";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
@@ -208,6 +204,7 @@ namespace Classes.Endereco
 			finally { if (Sqlcon.State == ConnectionState.Open) Sqlcon.Close(); }
 
 			return DtResultado;
+
 		}
 
 	}

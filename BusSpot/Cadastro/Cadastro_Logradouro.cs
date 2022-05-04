@@ -78,14 +78,14 @@ namespace BusSpot.Cadastro
 
         private void BuscarLogradouro()
         {
-            this.dataLista.DataSource = Logradouro_Classes.Buscar(this.txt_Buscar.Text);
+            this.dataLista.DataSource = Logradouro_Business.Buscar(this.txt_Buscar.Text);
             //  this.OcultarColunas();
             lbl_total.Text = "Total de Logradouros " + Convert.ToString(dataLista.Rows.Count);
         }
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = Logradouro_Classes.Mostrar();
+            this.dataLista.DataSource = Logradouro_Business.Mostrar();
             this.OcultarColunas();
             lbl_total.Text = "Total de Logradouros " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -111,7 +111,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = Logradouro_Classes.Remover(Convert.ToInt32(Codigo));
+                            Resp = Logradouro_Business.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -253,11 +253,11 @@ namespace BusSpot.Cadastro
                 {
                     if (this.eNovo)
                     {
-                        Resp = Logradouro_Classes.Inserir(txt_Nome.Text.Trim());
+                        Resp = Logradouro_Business.Inserir(txt_Nome.Text.Trim());
                     }
                     else
                     {
-                        Resp = Logradouro_Classes.Editar(Convert.ToInt32(txt_IDLogradouro.Text), txt_Nome.Text.Trim());
+                        Resp = Logradouro_Business.Editar(Convert.ToInt32(txt_IDLogradouro.Text), txt_Nome.Text.Trim());
                     }
 
                     if (Resp.Equals("OK"))

@@ -14,12 +14,12 @@ using BusSpot.Cadastro;
 
 namespace BusSpot.Cadastro
 {
-    public class Endereco_Classes
+    public class Endereco_Business
     {
         public static string Inserir(string cep, int idbairro, int idcidade,int idlogradouro, int idtipologradouro)
         {
 
-            Endereco obj = new();
+            EnderecoDTO obj = new();
             obj.cep = cep;
             obj.IDBairro = idbairro;
             obj.IDCidade = idcidade;
@@ -33,7 +33,7 @@ namespace BusSpot.Cadastro
         public static string Editar(int id, string cep, int idbairro, int idcidade, int idlogradouro, int idtipologradouro)
         {
 
-            Endereco obj = new();
+            EnderecoDTO obj = new();
             obj.ID = id;
             obj.cep = cep;
             obj.IDBairro = idbairro;
@@ -48,7 +48,7 @@ namespace BusSpot.Cadastro
         public static DataTable Buscar(string cep)
         {
 
-            Endereco obj = new();
+            EnderecoDTO obj = new();
             obj.txtBuscar = cep;
 
             return obj.Buscar_ViaCEP(obj);
@@ -58,7 +58,7 @@ namespace BusSpot.Cadastro
         public static string Remover(int id)
         {
 
-            Endereco obj = new();
+            EnderecoDTO obj = new();
             obj.ID = id;
 
             return obj.Remover_cep(obj);
@@ -67,7 +67,7 @@ namespace BusSpot.Cadastro
 
         public static DataTable Mostrar()
         {
-            return new Endereco().Mostrar_Endereco();
+            return new EnderecoDTO().Mostrar_Endereco();
 
 
         }

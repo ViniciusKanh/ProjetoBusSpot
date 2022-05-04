@@ -14,12 +14,12 @@ using BusSpot.Cadastro;
 
 namespace BusSpot.Cadastro
 {
-    public class Cidade_Classes
+    public class Cidade_Business
     {
         public static string Inserir(string nome, int IDESTADO, string Cep)
         {
 
-            Cidade obj = new();
+            CidadeDTO obj = new();
             obj.nome = nome;
             obj.estado = IDESTADO;
             obj.cep = Cep;
@@ -31,7 +31,7 @@ namespace BusSpot.Cadastro
         public static string Editar(int id, string nome, int IDESTADO, string Cep)
         {
 
-            Cidade obj = new();
+            CidadeDTO obj = new();
             obj.ID=id;
             obj.nome = nome;
             obj.estado = IDESTADO;
@@ -44,7 +44,7 @@ namespace BusSpot.Cadastro
         public static DataTable Buscar(string nome)
         {
 
-            Cidade obj = new();
+            CidadeDTO obj = new();
             obj.txtBuscar = nome;
 
             return obj.Buscar_Cidade(obj);
@@ -54,7 +54,7 @@ namespace BusSpot.Cadastro
         public static string Remover(int id)
         {
 
-            Cidade obj = new();
+            CidadeDTO obj = new();
             obj.ID = id;
 
             return obj.Remover_Cidade(obj);
@@ -63,7 +63,7 @@ namespace BusSpot.Cadastro
 
         public static DataTable Mostrar()
         {
-            return new Cidade().Mostrar_Cidade();
+            return new CidadeDTO().Mostrar_Cidade();
 
 
         }

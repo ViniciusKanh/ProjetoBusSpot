@@ -78,14 +78,14 @@ namespace BusSpot.Cadastro
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = Estado_Classes.Mostrar();
+            this.dataLista.DataSource = Estado_Business.Mostrar();
             this.OcultarColunas();
             lbl_total.Text = "Total de Estados "+ Convert.ToString(dataLista.Rows.Count);
         }
 
         private void BuscarSigla()
         {
-            this.dataLista.DataSource = Estado_Classes.Buscar(this.txt_Buscar.Text);
+            this.dataLista.DataSource = Estado_Business.Buscar(this.txt_Buscar.Text);
           //  this.OcultarColunas();
             lbl_total.Text = "Total de Estados " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -130,7 +130,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = Estado_Classes.Remover(Convert.ToInt32(Codigo));
+                            Resp = Estado_Business.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -200,11 +200,11 @@ namespace BusSpot.Cadastro
                 {
                     if (this.eNovo)
                     {
-                        Resp = Estado_Classes.Inserir(txt_Nome.Text.Trim(), txt_Sigla.Text);
+                        Resp = Estado_Business.Inserir(txt_Nome.Text.Trim(), txt_Sigla.Text);
                     }
                     else
                     {
-                        Resp = Estado_Classes.Editar(Convert.ToInt32(txt_IDESTADO.Text),txt_Nome.Text.Trim(), txt_Sigla.Text.ToUpper());
+                        Resp = Estado_Business.Editar(Convert.ToInt32(txt_IDESTADO.Text),txt_Nome.Text.Trim(), txt_Sigla.Text.ToUpper());
                     }
 
                     if (Resp.Equals("OK"))

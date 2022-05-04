@@ -25,7 +25,7 @@ namespace Classes.Transporte
 
 		public DateTime Data_Rec { get; private set; }
 
-		public Empresa empresa { get; private set; }
+		public EmpresaDTO empresa { get; private set; }
 
 		public Reclamacao()
         {

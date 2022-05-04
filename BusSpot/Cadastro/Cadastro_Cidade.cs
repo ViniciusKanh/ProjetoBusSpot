@@ -82,7 +82,7 @@ namespace BusSpot.Cadastro
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = Cidade_Classes.Mostrar();
+            this.dataLista.DataSource = Cidade_Business.Mostrar();
             this.OcultarColunas();
             lbl_total.Text = "Total de Cidade " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -109,7 +109,7 @@ namespace BusSpot.Cadastro
 
         private void BuscarCidade()
         {
-            this.dataLista.DataSource = Cidade_Classes.Buscar(this.txt_Buscar.Text);
+            this.dataLista.DataSource = Cidade_Business.Buscar(this.txt_Buscar.Text);
             //  this.OcultarColunas();
             lbl_total.Text = "Total de Cidades " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -139,7 +139,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = Cidade_Classes.Remover(Convert.ToInt32(Codigo));
+                            Resp = Cidade_Business.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -240,11 +240,11 @@ namespace BusSpot.Cadastro
                 {
                     if (this.eNovo)
                     {
-                        Resp = Cidade_Classes.Inserir(txt_Nome.Text.Trim(), Convert.ToInt32(cb_IDESTADO.SelectedValue), txt_CEP.Text);
+                        Resp = Cidade_Business.Inserir(txt_Nome.Text.Trim(), Convert.ToInt32(cb_IDESTADO.SelectedValue), txt_CEP.Text);
                     }
                     else
                     {
-                        Resp = Cidade_Classes.Editar(Convert.ToInt32(txt_IDCidade.Text), txt_Nome.Text.Trim(), Convert.ToInt32(cb_IDESTADO.SelectedValue), txt_CEP.Text);
+                        Resp = Cidade_Business.Editar(Convert.ToInt32(txt_IDCidade.Text), txt_Nome.Text.Trim(), Convert.ToInt32(cb_IDESTADO.SelectedValue), txt_CEP.Text);
                     }
 
                     if (Resp.Equals("OK"))

@@ -80,7 +80,7 @@ namespace BusSpot.Cadastro
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = Bairro_Classes.Mostrar();
+            this.dataLista.DataSource = Bairro_Business.Mostrar();
             this.OcultarColunas();
             lbl_total.Text = "Total de Bairro " + Convert.ToString(dataLista.Rows.Count);
         }
@@ -163,11 +163,11 @@ namespace BusSpot.Cadastro
                 {
                     if (this.eNovo)
                     {
-                        Resp = Bairro_Classes.Inserir(txt_Nome.Text.Trim());
+                        Resp = Bairro_Business.Inserir(txt_Nome.Text.Trim());
                     }
                     else
                     {
-                        Resp = Bairro_Classes.Editar(Convert.ToInt32(txt_IDBairro.Text), txt_Nome.Text.Trim());
+                        Resp = Bairro_Business.Editar(Convert.ToInt32(txt_IDBairro.Text), txt_Nome.Text.Trim());
                     }
 
                     if (Resp.Equals("OK"))
@@ -267,7 +267,7 @@ namespace BusSpot.Cadastro
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Resp = Bairro_Classes.Remover(Convert.ToInt32(Codigo));
+                            Resp = Bairro_Business.Remover(Convert.ToInt32(Codigo));
 
                             if (Resp.Equals("OK"))
                             {
@@ -321,7 +321,7 @@ namespace BusSpot.Cadastro
 
         private void BuscarBairro()
         {
-            this.dataLista.DataSource = Bairro_Classes.Buscar(this.txt_Buscar.Text);
+            this.dataLista.DataSource = Bairro_Business.Buscar(this.txt_Buscar.Text);
             //  this.OcultarColunas();
             lbl_total.Text = "Total de Bairros " + Convert.ToString(dataLista.Rows.Count);
         }

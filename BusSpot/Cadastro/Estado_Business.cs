@@ -14,12 +14,12 @@ using BusSpot.Cadastro;
 
 namespace BusSpot
 {
-    public class Estado_Classes
+    public class Estado_Business
     {
         public static string Inserir(string nome, string sigla)
         {
 
-            Estado obj = new();
+            EstadoDTO obj = new();
             obj.nome = nome;
             obj.sigla = sigla;
 
@@ -30,7 +30,7 @@ namespace BusSpot
         public static string Editar(int id, string nome, string sigla)
         {
 
-            Estado obj = new();
+            EstadoDTO obj = new();
             obj.ID = id;
             obj.nome = nome;
             obj.sigla = sigla;
@@ -42,7 +42,7 @@ namespace BusSpot
         public static DataTable Buscar(string sigla)
         {
 
-            Estado obj = new();
+            EstadoDTO obj = new();
             obj.txtBuscar = sigla;
 
             return obj.Buscar_Estado(obj);
@@ -52,7 +52,7 @@ namespace BusSpot
         public static string Remover(int id)
         {
 
-            Estado obj = new();
+            EstadoDTO obj = new();
             obj.ID= id;
 
             return obj.Remover_Estado(obj);
@@ -61,7 +61,7 @@ namespace BusSpot
 
         public static DataTable Mostrar()
         {
-            return new Estado().Mostrar_Estado();
+            return new EstadoDTO().Mostrar_Estado();
            
 
         }

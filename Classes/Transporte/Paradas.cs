@@ -19,9 +19,9 @@ namespace Classes.Transporte
 
 		public Ponto ponto { get; private set; }
 
-		public Empresa empresa { get; private set; }
+		public EmpresaDTO empresa { get; private set; }
 
-		public Endereco.Endereco endereço { get; private set; }
+		public Endereco.EnderecoDTO endereço { get; private set; }
 
 		public ICollection<Linhas> linhas { get; private set; }
 

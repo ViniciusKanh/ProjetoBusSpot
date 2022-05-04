@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace Classes.Endereco
 {
-    public class Cidade
+    public class CidadeDTO
     {
 		public int ID { get;  set; }
 		public String nome { get;  set; }
@@ -16,16 +16,16 @@ namespace Classes.Endereco
 
 		public int estado { get;  set; }
 
-		public ICollection<Endereco> endereço { get;  set; }
+		public ICollection<EnderecoDTO> endereço { get;  set; }
 
-        public Cidade()
+        public CidadeDTO()
         {
         }
 
 
 
         ///  
-        public string Incluir_Cidade(Cidade cidade)
+        public string Incluir_Cidade(CidadeDTO cidade)
 		{
 			string Resp;
 
@@ -106,7 +106,7 @@ namespace Classes.Endereco
 			return DtResultado;
 		}
 		///  
-		public string Remover_Cidade(Cidade cidade)
+		public string Remover_Cidade(CidadeDTO cidade)
 		{
 			string Resp;
 
@@ -144,7 +144,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public string Alterar_Cidade(Cidade cidade)
+		public string Alterar_Cidade(CidadeDTO cidade)
 		{
 			string Resp;
 
@@ -203,7 +203,7 @@ namespace Classes.Endereco
 		}
 
 		///  
-		public DataTable Buscar_Cidade(Cidade cidade)
+		public DataTable Buscar_Cidade(CidadeDTO cidade)
 		{
 			DataTable DtResultado = new DataTable("Cidade");
 

@@ -13,7 +13,7 @@ using BusSpot.Cadastro;
 
 namespace BusSpot.Cadastro
 {
-    public class TipoLogradouro_Classes
+    public class TipoLogradouro_Business
     {
         public static string Inserir(string nome)
         {
