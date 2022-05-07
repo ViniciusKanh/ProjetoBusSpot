@@ -216,3 +216,5 @@ C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\r
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Properties.Resources.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.frmLogin.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.FrmMenu.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Transporte.FrmEmpresa.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Transporte.Frm_Onibus.resources

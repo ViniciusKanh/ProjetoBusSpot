@@ -28,5 +28,11 @@
     <Compile Update="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Transporte\FrmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Transporte\Frm_Onibus.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

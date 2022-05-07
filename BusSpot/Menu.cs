@@ -41,7 +41,8 @@
 
         private void NovoProdutoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Transporte.Frm_Onibus form = new Transporte.Frm_Onibus();
+            form.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -181,12 +182,14 @@
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Transporte.Frm_Onibus form = new Transporte.Frm_Onibus();
+            form.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Transporte.FrmEmpresa form = new Transporte.FrmEmpresa();
+            form.Show();
         }
 
         private void pnlRight_Paint(object sender, PaintEventArgs e)

@@ -19,7 +19,7 @@ namespace Classes.Transporte
 
 		public String HorarioChegada { get; private set; }
 
-		public Coletivo onibus { get; private set; }
+		public ColetivoDTO onibus { get; private set; }
 
 		public Ponto ponto { get; private set; }
 

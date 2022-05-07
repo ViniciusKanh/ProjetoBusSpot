@@ -38,21 +38,12 @@
             this.tipoDeLogradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cEPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.linhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.onibusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuProdutos = new System.Windows.Forms.ToolStripMenuItem();
             this.novoProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuMovimentacoes = new System.Windows.Forms.ToolStripMenuItem();
             this.novaVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novoServiçoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.entradasESaídasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuReservas = new System.Windows.Forms.ToolStripMenuItem();
             this.viagensProgramadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viagensRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuChekInOut = new System.Windows.Forms.ToolStripMenuItem();
-            this.novoServiçoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuRelatorios = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuSair = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,7 +90,6 @@
             this.MenuProdutos,
             this.MenuMovimentacoes,
             this.MenuReservas,
-            this.MenuChekInOut,
             this.MenuRelatorios,
             this.MenuSair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -113,10 +103,7 @@
             // MenuCadastro
             // 
             this.MenuCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.funcionáriosToolStripMenuItem,
-            this.empresaToolStripMenuItem,
-            this.linhaToolStripMenuItem,
-            this.onibusToolStripMenuItem});
+            this.funcionáriosToolStripMenuItem});
             this.MenuCadastro.Image = ((System.Drawing.Image)(resources.GetObject("MenuCadastro.Image")));
             this.MenuCadastro.Name = "MenuCadastro";
             this.MenuCadastro.Size = new System.Drawing.Size(87, 20);
@@ -133,69 +120,51 @@
             this.logradouroToolStripMenuItem,
             this.cEPToolStripMenuItem});
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
-            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.funcionáriosToolStripMenuItem.Text = "Endereco";
             this.funcionáriosToolStripMenuItem.Click += new System.EventHandler(this.FuncionáriosToolStripMenuItem_Click);
             // 
             // estadoToolStripMenuItem
             // 
             this.estadoToolStripMenuItem.Name = "estadoToolStripMenuItem";
-            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estadoToolStripMenuItem.Text = "Estado";
             this.estadoToolStripMenuItem.Click += new System.EventHandler(this.estadoToolStripMenuItem_Click);
             // 
             // cidadeToolStripMenuItem
             // 
             this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
-            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cidadeToolStripMenuItem.Text = "Cidade";
             this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click);
             // 
             // bairroToolStripMenuItem
             // 
             this.bairroToolStripMenuItem.Name = "bairroToolStripMenuItem";
-            this.bairroToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.bairroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bairroToolStripMenuItem.Text = "Bairro";
             this.bairroToolStripMenuItem.Click += new System.EventHandler(this.bairroToolStripMenuItem_Click);
             // 
             // tipoDeLogradouroToolStripMenuItem
             // 
             this.tipoDeLogradouroToolStripMenuItem.Name = "tipoDeLogradouroToolStripMenuItem";
-            this.tipoDeLogradouroToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.tipoDeLogradouroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoDeLogradouroToolStripMenuItem.Text = "Tipo de Logradouro";
             this.tipoDeLogradouroToolStripMenuItem.Click += new System.EventHandler(this.tipoDeLogradouroToolStripMenuItem_Click);
             // 
             // logradouroToolStripMenuItem
             // 
             this.logradouroToolStripMenuItem.Name = "logradouroToolStripMenuItem";
-            this.logradouroToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.logradouroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logradouroToolStripMenuItem.Text = "Logradouro";
             this.logradouroToolStripMenuItem.Click += new System.EventHandler(this.logradouroToolStripMenuItem_Click);
             // 
             // cEPToolStripMenuItem
             // 
             this.cEPToolStripMenuItem.Name = "cEPToolStripMenuItem";
-            this.cEPToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.cEPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cEPToolStripMenuItem.Text = "CEP";
             this.cEPToolStripMenuItem.Click += new System.EventHandler(this.cEPToolStripMenuItem_Click);
-            // 
-            // empresaToolStripMenuItem
-            // 
-            this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
-            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.empresaToolStripMenuItem.Text = "Empresa";
-            // 
-            // linhaToolStripMenuItem
-            // 
-            this.linhaToolStripMenuItem.Name = "linhaToolStripMenuItem";
-            this.linhaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.linhaToolStripMenuItem.Text = "Linha";
-            // 
-            // onibusToolStripMenuItem
-            // 
-            this.onibusToolStripMenuItem.Name = "onibusToolStripMenuItem";
-            this.onibusToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.onibusToolStripMenuItem.Text = "Onibus";
             // 
             // MenuProdutos
             // 
@@ -210,90 +179,42 @@
             // novoProdutoToolStripMenuItem
             // 
             this.novoProdutoToolStripMenuItem.Name = "novoProdutoToolStripMenuItem";
-            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoProdutoToolStripMenuItem.Text = "Novo Onibus";
             this.novoProdutoToolStripMenuItem.Click += new System.EventHandler(this.NovoProdutoToolStripMenuItem_Click);
             // 
             // MenuMovimentacoes
             // 
             this.MenuMovimentacoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novaVendaToolStripMenuItem,
-            this.novoServiçoToolStripMenuItem1,
-            this.entradasESaídasToolStripMenuItem});
+            this.novaVendaToolStripMenuItem});
             this.MenuMovimentacoes.Image = ((System.Drawing.Image)(resources.GetObject("MenuMovimentacoes.Image")));
             this.MenuMovimentacoes.Name = "MenuMovimentacoes";
-            this.MenuMovimentacoes.Size = new System.Drawing.Size(106, 20);
-            this.MenuMovimentacoes.Text = "Mapeamento";
+            this.MenuMovimentacoes.Size = new System.Drawing.Size(64, 20);
+            this.MenuMovimentacoes.Text = "Linha";
             this.MenuMovimentacoes.Click += new System.EventHandler(this.MenuMovimentacoes_Click);
             // 
             // novaVendaToolStripMenuItem
             // 
             this.novaVendaToolStripMenuItem.Name = "novaVendaToolStripMenuItem";
-            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.novaVendaToolStripMenuItem.Text = "Mapeamento por Veiculo";
+            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novaVendaToolStripMenuItem.Text = "Cadastrar Linha";
             this.novaVendaToolStripMenuItem.Click += new System.EventHandler(this.novaVendaToolStripMenuItem_Click);
-            // 
-            // novoServiçoToolStripMenuItem1
-            // 
-            this.novoServiçoToolStripMenuItem1.Name = "novoServiçoToolStripMenuItem1";
-            this.novoServiçoToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
-            this.novoServiçoToolStripMenuItem1.Text = "Mapeamento por Linha";
-            this.novoServiçoToolStripMenuItem1.Click += new System.EventHandler(this.novoServiçoToolStripMenuItem1_Click);
-            // 
-            // entradasESaídasToolStripMenuItem
-            // 
-            this.entradasESaídasToolStripMenuItem.Name = "entradasESaídasToolStripMenuItem";
-            this.entradasESaídasToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.entradasESaídasToolStripMenuItem.Text = "Historico de Veiculos";
-            this.entradasESaídasToolStripMenuItem.Click += new System.EventHandler(this.entradasESaídasToolStripMenuItem_Click);
             // 
             // MenuReservas
             // 
             this.MenuReservas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viagensProgramadasToolStripMenuItem,
-            this.viagensRealizadasToolStripMenuItem});
+            this.viagensProgramadasToolStripMenuItem});
             this.MenuReservas.Image = ((System.Drawing.Image)(resources.GetObject("MenuReservas.Image")));
             this.MenuReservas.Name = "MenuReservas";
-            this.MenuReservas.Size = new System.Drawing.Size(76, 20);
-            this.MenuReservas.Text = "Viagens";
+            this.MenuReservas.Size = new System.Drawing.Size(86, 20);
+            this.MenuReservas.Text = "Operaçao";
             this.MenuReservas.Click += new System.EventHandler(this.MenuReservas_Click);
             // 
             // viagensProgramadasToolStripMenuItem
             // 
             this.viagensProgramadasToolStripMenuItem.Name = "viagensProgramadasToolStripMenuItem";
-            this.viagensProgramadasToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.viagensProgramadasToolStripMenuItem.Text = "Viagens Programadas";
-            // 
-            // viagensRealizadasToolStripMenuItem
-            // 
-            this.viagensRealizadasToolStripMenuItem.Name = "viagensRealizadasToolStripMenuItem";
-            this.viagensRealizadasToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.viagensRealizadasToolStripMenuItem.Text = "Viagens Realizadas";
-            // 
-            // MenuChekInOut
-            // 
-            this.MenuChekInOut.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoServiçoToolStripMenuItem,
-            this.checkOutToolStripMenuItem});
-            this.MenuChekInOut.Image = ((System.Drawing.Image)(resources.GetObject("MenuChekInOut.Image")));
-            this.MenuChekInOut.Name = "MenuChekInOut";
-            this.MenuChekInOut.Size = new System.Drawing.Size(104, 20);
-            this.MenuChekInOut.Text = "Reclamacoes";
-            this.MenuChekInOut.Click += new System.EventHandler(this.MenuChekInOut_Click);
-            // 
-            // novoServiçoToolStripMenuItem
-            // 
-            this.novoServiçoToolStripMenuItem.Name = "novoServiçoToolStripMenuItem";
-            this.novoServiçoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.novoServiçoToolStripMenuItem.Text = "Reclamações Pendente";
-            this.novoServiçoToolStripMenuItem.Click += new System.EventHandler(this.novoServiçoToolStripMenuItem_Click);
-            // 
-            // checkOutToolStripMenuItem
-            // 
-            this.checkOutToolStripMenuItem.Name = "checkOutToolStripMenuItem";
-            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.checkOutToolStripMenuItem.Text = "Reclamações Concluidas";
-            this.checkOutToolStripMenuItem.Click += new System.EventHandler(this.checkOutToolStripMenuItem_Click);
+            this.viagensProgramadasToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.viagensProgramadasToolStripMenuItem.Text = "Inserir Operação dos Onibus";
             // 
             // MenuRelatorios
             // 
@@ -761,12 +682,7 @@
         private System.Windows.Forms.ToolStripMenuItem novoProdutoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuMovimentacoes;
         private System.Windows.Forms.ToolStripMenuItem novaVendaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem novoServiçoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem entradasESaídasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuReservas;
-        private System.Windows.Forms.ToolStripMenuItem MenuChekInOut;
-        private System.Windows.Forms.ToolStripMenuItem novoServiçoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuRelatorios;
         private System.Windows.Forms.ToolStripMenuItem MenuSair;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
@@ -803,11 +719,7 @@
         private ToolStripMenuItem bairroToolStripMenuItem;
         private ToolStripMenuItem logradouroToolStripMenuItem;
         private ToolStripMenuItem cEPToolStripMenuItem;
-        private ToolStripMenuItem empresaToolStripMenuItem;
-        private ToolStripMenuItem linhaToolStripMenuItem;
-        private ToolStripMenuItem onibusToolStripMenuItem;
         private ToolStripMenuItem viagensProgramadasToolStripMenuItem;
-        private ToolStripMenuItem viagensRealizadasToolStripMenuItem;
         private ToolStripMenuItem tipoDeLogradouroToolStripMenuItem;
     }
 }

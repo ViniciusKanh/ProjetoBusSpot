@@ -16,7 +16,7 @@ namespace Classes.Transporte
 
 		public Paradas paradas { get; private set; }
 
-		public Coletivo onibus { get; private set; }
+		public ColetivoDTO onibus { get; private set; }
 
 		public Linhas linhas { get; private set; }
 
