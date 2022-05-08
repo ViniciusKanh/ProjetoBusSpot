@@ -31,6 +31,15 @@
     <Compile Update="Transporte\FrmEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Transporte\FrmLinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Transporte\FrmParada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Transporte\FrmPonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Transporte\Frm_Onibus.cs">
       <SubType>Form</SubType>
     </Compile>
