@@ -47,7 +47,8 @@
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Transporte.FrmLinha form = new Transporte.FrmLinha();
+            form.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -57,7 +58,8 @@
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Transporte.FrmParada form = new Transporte.FrmParada();
+            form.Show();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -112,7 +114,8 @@
 
         private void novaVendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Transporte.FrmLinha form = new Transporte.FrmLinha();
+            form.Show();
         }
 
         private void novoServiçoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -326,6 +329,19 @@
         private void cEPToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Cadastro.Cadastro_Endereco form = new Cadastro.Cadastro_Endereco();
+            form.Show();
+        }
+
+        private void cadastroParadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Transporte.FrmParada form = new Transporte.FrmParada();
+            form.Show();
+
+        }
+
+        private void cadastroPontoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Transporte.FrmPonto form = new Transporte.FrmPonto();
             form.Show();
         }
     }

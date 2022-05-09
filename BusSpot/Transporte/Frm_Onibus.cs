@@ -58,9 +58,9 @@ namespace BusSpot.Transporte
             if (this.eNovo || eEditar)
             {
                 this.Habilitar(true);
-                this.btnNovo.Enabled = false;
+                this.btnNovo.Enabled = true;
                 this.btnSalvar.Enabled = true;
-                this.btnEditar.Enabled = false;
+                this.btnEditar.Enabled = true;
                 this.btnExcluir.Enabled = true;
 
             }
@@ -72,7 +72,7 @@ namespace BusSpot.Transporte
                 this.btnNovo.Enabled = true;
                 this.btnSalvar.Enabled = false;
                 this.btnEditar.Enabled = true;
-                this.btnExcluir.Enabled = false;
+                this.btnExcluir.Enabled = true;
             }
 
         }

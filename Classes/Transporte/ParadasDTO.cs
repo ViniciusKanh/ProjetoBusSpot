@@ -59,7 +59,7 @@ namespace Classes.Transporte
 				ParNome_Parada.ParameterName = "@NOME";
 				ParNome_Parada.SqlDbType = SqlDbType.VarChar;
 				ParNome_Parada.Size = 50;
-				ParNome_Parada.Value = Longitude;
+				ParNome_Parada.Value = Nome;
 				SqlCmd.Parameters.Add(ParNome_Parada);
 
 				SqlParameter ParID_Endereco = new SqlParameter();
