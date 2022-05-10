@@ -180,7 +180,8 @@
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Transporte.Frm_Operacao form = new Transporte.Frm_Operacao();
+            form.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -342,6 +343,12 @@
         private void cadastroPontoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Transporte.FrmPonto form = new Transporte.FrmPonto();
+            form.Show();
+        }
+
+        private void viagensProgramadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Transporte.Frm_Operacao form = new Transporte.Frm_Operacao();
             form.Show();
         }
     }

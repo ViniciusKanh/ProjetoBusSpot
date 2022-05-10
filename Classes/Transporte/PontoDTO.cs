@@ -163,7 +163,7 @@ namespace Classes.Transporte
 				SqlCmd.Parameters.Add(ParTipo_Ponto);
 
 				SqlParameter ParID_Parada = new SqlParameter();
-				ParID_Parada.ParameterName = "@ID";
+				ParID_Parada.ParameterName = "@ID_PARADA";
 				ParID_Parada.SqlDbType = SqlDbType.Int;
 				ParID_Parada.Value = ID_Parada;
 				SqlCmd.Parameters.Add(ParID_Parada);

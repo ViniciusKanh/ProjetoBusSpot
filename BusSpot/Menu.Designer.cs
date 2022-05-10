@@ -43,6 +43,7 @@
             this.MenuMovimentacoes = new System.Windows.Forms.ToolStripMenuItem();
             this.novaVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroParadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroPontoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuReservas = new System.Windows.Forms.ToolStripMenuItem();
             this.viagensProgramadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuRelatorios = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +77,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cadastroPontoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -200,16 +200,23 @@
             // novaVendaToolStripMenuItem
             // 
             this.novaVendaToolStripMenuItem.Name = "novaVendaToolStripMenuItem";
-            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.novaVendaToolStripMenuItem.Text = "Cadastrar Linha";
             this.novaVendaToolStripMenuItem.Click += new System.EventHandler(this.novaVendaToolStripMenuItem_Click);
             // 
             // cadastroParadaToolStripMenuItem
             // 
             this.cadastroParadaToolStripMenuItem.Name = "cadastroParadaToolStripMenuItem";
-            this.cadastroParadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroParadaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.cadastroParadaToolStripMenuItem.Text = "Cadastro Parada";
             this.cadastroParadaToolStripMenuItem.Click += new System.EventHandler(this.cadastroParadaToolStripMenuItem_Click);
+            // 
+            // cadastroPontoToolStripMenuItem
+            // 
+            this.cadastroPontoToolStripMenuItem.Name = "cadastroPontoToolStripMenuItem";
+            this.cadastroPontoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.cadastroPontoToolStripMenuItem.Text = "Cadastro Ponto";
+            this.cadastroPontoToolStripMenuItem.Click += new System.EventHandler(this.cadastroPontoToolStripMenuItem_Click);
             // 
             // MenuReservas
             // 
@@ -226,6 +233,7 @@
             this.viagensProgramadasToolStripMenuItem.Name = "viagensProgramadasToolStripMenuItem";
             this.viagensProgramadasToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.viagensProgramadasToolStripMenuItem.Text = "Inserir Operação dos Onibus";
+            this.viagensProgramadasToolStripMenuItem.Click += new System.EventHandler(this.viagensProgramadasToolStripMenuItem_Click);
             // 
             // MenuRelatorios
             // 
@@ -650,13 +658,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "13:00:00";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // cadastroPontoToolStripMenuItem
-            // 
-            this.cadastroPontoToolStripMenuItem.Name = "cadastroPontoToolStripMenuItem";
-            this.cadastroPontoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cadastroPontoToolStripMenuItem.Text = "Cadastro Ponto";
-            this.cadastroPontoToolStripMenuItem.Click += new System.EventHandler(this.cadastroPontoToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 

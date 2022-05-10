@@ -221,3 +221,4 @@ C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\B
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Transporte.FrmLinha.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Transporte.FrmParada.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Transporte.FrmPonto.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Debug\net6.0-windows\BusSpot.Transporte.Frm_Operacao.resources
