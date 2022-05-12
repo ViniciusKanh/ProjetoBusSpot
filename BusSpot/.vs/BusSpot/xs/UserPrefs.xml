@@ -1,0 +1,34 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cadastro/Reclamacao_Business.cs">
+    <Files>
+      <File FileName="Cadastro/Cidade_Business.cs" Line="1" Column="1" />
+      <File FileName="../Classes/Endereco/BairroDTO.cs" Line="13" Column="3" />
+      <File FileName="../Classes/Transporte/ReclamacaoDTO.cs" Line="22" Column="19" />
+      <File FileName="Cadastro/Reclamacao_Business.cs" Line="24" Column="11" />
+      <File FileName="Cadastro/Bairro_Business.cs" Line="12" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BusSpot" expanded="True">
+            <Node name="BusSpot" expanded="True">
+              <Node name="Cadastro" expanded="True" />
+            </Node>
+            <Node name="Classes" expanded="True">
+              <Node name="Transporte" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
