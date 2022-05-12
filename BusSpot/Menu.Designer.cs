@@ -669,14 +669,12 @@
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "FrmMenu";
             this.Text = "BusSPot";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.Resize += new System.EventHandler(this.FrmMenu_Resize);
             this.menuStrip1.ResumeLayout(false);
