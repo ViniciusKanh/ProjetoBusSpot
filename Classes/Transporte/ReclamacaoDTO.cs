@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlTypes;
 using System.Data.SqlClient;
 
@@ -9,19 +8,21 @@ namespace Classes.Transporte
 	public class ReclamacaoDTO
 	{
 
-			public int ID { get; set; }
+		public int ID { get; set; }
 
-			public string nome { get; set; }
+		public string nome { get; set; }
 
-			public string email { get; set; }
+		public string email { get; set; }
 
-			public string telefone { get; set; }
+		public string telefone { get; set; }
 
-			public string descricao { get; set; }
+		public string descricao { get; set; }
 
-			public DateTime data_rec { get; set; }
+		public DateTime data_rec { get; set; }
 
-			public string retorno { get; set; }
+		public string retorno { get; set; }
+
+		public int Id_EMPRESA { get; set; }
 
 			public string txtBuscar { get; set; }
 		
@@ -49,6 +50,48 @@ namespace Classes.Transporte
 				ParNome_Reclamacao.Size = 50;
 				ParNome_Reclamacao.Value = nome;
 				SqlCmd.Parameters.Add(ParNome_Reclamacao);
+
+				SqlParameter ParEmail_Reclamacao = new SqlParameter();
+				ParEmail_Reclamacao.ParameterName = "@EMAIL";
+				ParEmail_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParEmail_Reclamacao.Size = 50;
+				ParEmail_Reclamacao.Value = email;
+				SqlCmd.Parameters.Add(ParEmail_Reclamacao);
+
+				SqlParameter ParTelefone_Reclamacao = new SqlParameter();
+				ParTelefone_Reclamacao.ParameterName = "@TELEFONE";
+				ParTelefone_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParTelefone_Reclamacao.Size = 11;
+				ParTelefone_Reclamacao.Value = telefone;
+				SqlCmd.Parameters.Add(ParTelefone_Reclamacao);
+
+				SqlParameter ParDescricao_Reclamacao = new SqlParameter();
+				ParDescricao_Reclamacao.ParameterName = "@DESCRICAO";
+				ParDescricao_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParDescricao_Reclamacao.Size = 50;
+				ParNome_Reclamacao.Value = descricao;
+				SqlCmd.Parameters.Add(ParNome_Reclamacao);
+
+
+				SqlParameter ParDataRec_Reclamacao = new SqlParameter();
+				ParDataRec_Reclamacao.ParameterName = "@DATA_REC";
+				ParDataRec_Reclamacao.SqlDbType = SqlDbType.Date;
+				ParDataRec_Reclamacao.Value = data_rec;
+				SqlCmd.Parameters.Add(ParDataRec_Reclamacao);
+
+				SqlParameter ParRetorno_Reclamacao = new SqlParameter();
+				ParRetorno_Reclamacao.ParameterName = "@RETORNO";
+				ParRetorno_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParRetorno_Reclamacao.Size = 50;
+				ParRetorno_Reclamacao.Value = retorno;
+				SqlCmd.Parameters.Add(ParRetorno_Reclamacao);
+
+
+				SqlParameter ParIDEMPRESA_Reclamacao = new SqlParameter();
+				ParIDEMPRESA_Reclamacao.ParameterName = "@ID_EMPRESA";
+				ParIDEMPRESA_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParIDEMPRESA_Reclamacao.Value = Id_EMPRESA;
+				SqlCmd.Parameters.Add(ParIDEMPRESA_Reclamacao);
 
 				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Reclamacao N�o Inserido";
 
@@ -96,7 +139,7 @@ namespace Classes.Transporte
 		}
 
 		///  
-		public string Alterar_Bairro(ReclamacaoDTO reclamacao)
+		public string Alterar_Reclamacao(ReclamacaoDTO reclamacao)
 		{
 			string Resp;
 
@@ -111,11 +154,60 @@ namespace Classes.Transporte
 				SqlCmd.CommandText = "Proc_Alterar_Reclamacao";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
-				SqlParameter ParID_BAIRRO = new SqlParameter();
-				ParID_BAIRRO.ParameterName = "@ID";
-				ParID_BAIRRO.SqlDbType = SqlDbType.Int;
-				ParID_BAIRRO.Value = ID;
-				SqlCmd.Parameters.Add(ParID_BAIRRO);
+				SqlParameter ParID_Reclamacao = new SqlParameter();
+				ParID_Reclamacao.ParameterName = "@ID";
+				ParID_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParID_Reclamacao.Value = ID;
+				SqlCmd.Parameters.Add(ParID_Reclamacao);
+
+				SqlParameter ParNome_Reclamacao = new SqlParameter();
+				ParNome_Reclamacao.ParameterName = "@Nome";
+				ParNome_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParNome_Reclamacao.Size = 50;
+				ParNome_Reclamacao.Value = nome;
+				SqlCmd.Parameters.Add(ParNome_Reclamacao);
+
+				SqlParameter ParEmail_Reclamacao = new SqlParameter();
+				ParEmail_Reclamacao.ParameterName = "@EMAIL";
+				ParEmail_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParEmail_Reclamacao.Size = 50;
+				ParEmail_Reclamacao.Value = email;
+				SqlCmd.Parameters.Add(ParEmail_Reclamacao);
+
+				SqlParameter ParTelefone_Reclamacao = new SqlParameter();
+				ParTelefone_Reclamacao.ParameterName = "@TELEFONE";
+				ParTelefone_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParTelefone_Reclamacao.Size = 11;
+				ParTelefone_Reclamacao.Value = telefone;
+				SqlCmd.Parameters.Add(ParTelefone_Reclamacao);
+
+				SqlParameter ParDescricao_Reclamacao = new SqlParameter();
+				ParDescricao_Reclamacao.ParameterName = "@DESCRICAO";
+				ParDescricao_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParDescricao_Reclamacao.Size = 50;
+				ParNome_Reclamacao.Value = descricao;
+				SqlCmd.Parameters.Add(ParNome_Reclamacao);
+
+
+				SqlParameter ParDataRec_Reclamacao = new SqlParameter();
+				ParDataRec_Reclamacao.ParameterName = "@DATA_REC";
+				ParDataRec_Reclamacao.SqlDbType = SqlDbType.Date;
+				ParDataRec_Reclamacao.Value = data_rec;
+				SqlCmd.Parameters.Add(ParDataRec_Reclamacao);
+
+				SqlParameter ParRetorno_Reclamacao = new SqlParameter();
+				ParRetorno_Reclamacao.ParameterName = "@RETORNO";
+				ParRetorno_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParRetorno_Reclamacao.Size = 50;
+				ParRetorno_Reclamacao.Value = retorno;
+				SqlCmd.Parameters.Add(ParRetorno_Reclamacao);
+
+
+				SqlParameter ParIDEMPRESA_Reclamacao = new SqlParameter();
+				ParIDEMPRESA_Reclamacao.ParameterName = "@ID_EMPRESA";
+				ParIDEMPRESA_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParIDEMPRESA_Reclamacao.Value = Id_EMPRESA;
+				SqlCmd.Parameters.Add(ParIDEMPRESA_Reclamacao);
 
 
 

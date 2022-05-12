@@ -10,59 +10,73 @@ using System.Data;
 using System.Data.SqlTypes;
 using System.Data.SqlClient;
 using BusSpot.Cadastro;
+using Classes.Transporte;
 
 namespace BusSpot.Cadastro
 {
 	public class Reclamacao_Business
 	{
 
-        public static string Inserir(string nome, string email, string telefone, string descricao, dateTime data_rec, string retorno)
+        public static string Inserir(string nome, string email, string telefone, string descricao, DateTime data_rec, string retorno, int id_empresa)
         {
 
             ReclamacaoDTO obj = new();
             obj.nome = nome;
+            obj.email = email;
+            obj.telefone = telefone;
+            obj.descricao = descricao;
+            obj.data_rec = data_rec;
+            obj.retorno = retorno;
+            obj.Id_EMPRESA = id_empresa;
           
 
 
-            return obj.Incluir_Bairro(obj);
+            return obj.Incluir_Reclamacao(obj);
 
         }
 
-        public static string Editar(int id, string nome)
+        public static string Editar(int id, string nome, string email, string telefone, string descricao, DateTime data_rec, string retorno, int id_empresa)
         {
 
-            BairroDTO obj = new();
+            ReclamacaoDTO obj = new();
             obj.ID = id;
             obj.nome = nome;
+            obj.email = email;
+            obj.telefone = telefone;
+            obj.descricao = descricao;
+            obj.data_rec = data_rec;
+            obj.retorno = retorno;
+            obj.Id_EMPRESA = id_empresa;
 
 
-            return obj.Alterar_Bairro(obj);
+
+            return obj.Alterar_Reclamacao(obj);
 
         }
 
         public static DataTable Buscar(string nome)
         {
 
-            BairroDTO obj = new();
+            ReclamacaoDTO obj = new();
             obj.txtBuscar = nome;
 
-            return obj.Buscar_Bairro(obj);
+            return obj.Buscar_Reclamacao(obj);
 
         }
 
         public static string Remover(int id)
         {
 
-            BairroDTO obj = new();
+            ReclamacaoDTO obj = new();
             obj.ID = id;
 
-            return obj.Remover_Bairro(obj);
+            return obj.Remover_Reclamacao(obj);
 
         }
 
         public static DataTable Mostrar()
         {
-            return new BairroDTO().Mostrar_Bairro();
+            return new ReclamacaoDTO().Mostrar_Reclamacao();
 
 
         }

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Elastic.Apm.SqlClient" Version="1.14.1" />
+    <PackageReference Include="Elastic.Apm.SqlClient" Version="1.15.0" />
     <PackageReference Include="Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider" Version="3.0.0" />
     <PackageReference Include="runtime.native.System.Data.SqlClient.sni" Version="4.7.0" />
     <PackageReference Include="runtime.win-arm64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
