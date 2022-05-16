@@ -17,7 +17,7 @@ namespace BusSpot.Cadastro
 	public class Reclamacao_Business
 	{
 
-        public static string Inserir(string nome, string email, string telefone, string descricao, DateTime data_rec, string retorno, int id_empresa)
+        public static string Inserir(string nome, string email, string telefone, string descricao, DateTime data_rec, string retorno, int id_empresa, int idonibus, int idlinha)
         {
 
             ReclamacaoDTO obj = new();
@@ -28,6 +28,8 @@ namespace BusSpot.Cadastro
             obj.data_rec = data_rec;
             obj.retorno = retorno;
             obj.Id_EMPRESA = id_empresa;
+            obj.Id_Onibus = idonibus;
+            obj.Id_Linha = idlinha;
           
 
 
@@ -35,7 +37,7 @@ namespace BusSpot.Cadastro
 
         }
 
-        public static string Editar(int id, string nome, string email, string telefone, string descricao, DateTime data_rec, string retorno, int id_empresa)
+        public static string Editar(int id, string nome, string email, string telefone, string descricao, DateTime data_rec, string retorno, int id_empresa, int idonibus, int idlinha)
         {
 
             ReclamacaoDTO obj = new();
@@ -47,6 +49,9 @@ namespace BusSpot.Cadastro
             obj.data_rec = data_rec;
             obj.retorno = retorno;
             obj.Id_EMPRESA = id_empresa;
+            obj.Id_Onibus = idonibus;
+            obj.Id_Linha = idlinha;
+
 
 
 

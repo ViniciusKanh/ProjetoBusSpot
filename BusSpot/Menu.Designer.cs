@@ -97,7 +97,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1079, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1349, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -275,7 +275,7 @@
             this.pnlTopo.Location = new System.Drawing.Point(0, 24);
             this.pnlTopo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlTopo.Name = "pnlTopo";
-            this.pnlTopo.Size = new System.Drawing.Size(792, 87);
+            this.pnlTopo.Size = new System.Drawing.Size(1062, 87);
             this.pnlTopo.TabIndex = 1;
             this.pnlTopo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTopo_Paint);
             // 
@@ -408,10 +408,10 @@
             this.pnlRight.Controls.Add(this.label3);
             this.pnlRight.Controls.Add(this.label2);
             this.pnlRight.Controls.Add(this.label1);
-            this.pnlRight.Location = new System.Drawing.Point(787, 24);
+            this.pnlRight.Location = new System.Drawing.Point(1030, 24);
             this.pnlRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(292, 578);
+            this.pnlRight.Size = new System.Drawing.Size(319, 618);
             this.pnlRight.TabIndex = 2;
             this.pnlRight.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRight_Paint);
             // 
@@ -665,7 +665,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1079, 600);
+            this.ClientSize = new System.Drawing.Size(1349, 640);
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.menuStrip1);

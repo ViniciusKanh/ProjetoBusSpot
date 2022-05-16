@@ -12,6 +12,15 @@ using Classes.Endereco;
 using Classes.Transporte;
 using Classes;
 using BusSpot.Cadastro;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BusSpot.Transporte
 {
@@ -85,6 +94,7 @@ namespace BusSpot.Transporte
             cbCEP.Enabled = true;
             btnImg.Enabled = true;
             txtNumeral.Enabled=true;
+            btnImg.Enabled = true;
             txtCNPJ.Focus();    
 
         }
@@ -123,6 +133,19 @@ namespace BusSpot.Transporte
         private void btnImg_Click(object sender, EventArgs e)
         {
 
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Imagens(*.jpg;*.png)|*.jpg;*.png|Todos os Arquivos(*.*)|*.*";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string foto = dialog.FileName.ToString();
+                img.ImageLocation = foto;
+            }
+
+        }
+
+        private void LimparFoto()
+        {
+            img.Image = Properties.Resources.sem_foto;
         }
 
         private void txtEstoque_TextChanged(object sender, EventArgs e)

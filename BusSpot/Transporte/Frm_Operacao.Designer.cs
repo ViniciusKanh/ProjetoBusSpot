@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Operacao));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.cbLinha = new System.Windows.Forms.ComboBox();
             this.cbOnibus = new System.Windows.Forms.ComboBox();
@@ -49,8 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.dataLista = new System.Windows.Forms.DataGridView();
-            this.txtData2 = new System.Windows.Forms.DateTimePicker();
-            this.txtData = new System.Windows.Forms.MaskedTextBox();
+            this.txtData = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataLista)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,9 +59,9 @@
             this.label4.Location = new System.Drawing.Point(196, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 160;
-            this.label4.Text = "Ponto:";
+            this.label4.Text = "Linha:";
             // 
             // cbLinha
             // 
@@ -182,9 +181,9 @@
             this.label7.Location = new System.Drawing.Point(16, 119);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 15);
+            this.label7.Size = new System.Drawing.Size(48, 15);
             this.label7.TabIndex = 152;
-            this.label7.Text = "Empresa:";
+            this.label7.Text = "Onibus:";
             // 
             // label2
             // 
@@ -236,37 +235,37 @@
             this.dataLista.AllowUserToAddRows = false;
             this.dataLista.AllowUserToDeleteRows = false;
             this.dataLista.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Deletar});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataLista.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataLista.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataLista.Location = new System.Drawing.Point(11, 183);
             this.dataLista.MultiSelect = false;
             this.dataLista.Name = "dataLista";
             this.dataLista.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataLista.RowTemplate.Height = 25;
             this.dataLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataLista.Size = new System.Drawing.Size(367, 193);
@@ -274,21 +273,13 @@
             this.dataLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataLista_CellContentClick);
             this.dataLista.DoubleClick += new System.EventHandler(this.dataLista_DoubleClick);
             // 
-            // txtData2
-            // 
-            this.txtData2.Location = new System.Drawing.Point(114, 63);
-            this.txtData2.Name = "txtData2";
-            this.txtData2.Size = new System.Drawing.Size(264, 23);
-            this.txtData2.TabIndex = 161;
-            // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(246, 148);
-            this.txtData.Mask = "00/00/0000";
+            this.txtData.Location = new System.Drawing.Point(114, 63);
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(100, 23);
-            this.txtData.TabIndex = 162;
-            this.txtData.ValidatingType = typeof(System.DateTime);
+            this.txtData.Size = new System.Drawing.Size(264, 23);
+            this.txtData.TabIndex = 161;
+            this.txtData.ValueChanged += new System.EventHandler(this.txtData_ValueChanged);
             // 
             // Frm_Operacao
             // 
@@ -296,7 +287,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 471);
             this.Controls.Add(this.txtData);
-            this.Controls.Add(this.txtData2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbLinha);
             this.Controls.Add(this.cbOnibus);
@@ -313,6 +303,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dataLista);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "Frm_Operacao";
             this.Text = "Frm_Operacao";
             this.Load += new System.EventHandler(this.Frm_Operacao_Load);
@@ -341,7 +333,6 @@
         private Label label1;
         private Button btnSalvar;
         private DataGridView dataLista;
-        private DateTimePicker txtData2;
-        private MaskedTextBox txtData;
+        private DateTimePicker txtData;
     }
 }

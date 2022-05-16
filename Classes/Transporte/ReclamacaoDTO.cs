@@ -24,7 +24,11 @@ namespace Classes.Transporte
 
 		public int Id_EMPRESA { get; set; }
 
-			public string txtBuscar { get; set; }
+		public int Id_Onibus { get; set; }
+
+		public int Id_Linha { get; set; }
+
+		public string txtBuscar { get; set; }
 		
 		public ReclamacaoDTO() { }
 
@@ -45,7 +49,7 @@ namespace Classes.Transporte
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
 				SqlParameter ParNome_Reclamacao = new SqlParameter();
-				ParNome_Reclamacao.ParameterName = "@Nome";
+				ParNome_Reclamacao.ParameterName = "@NOME";
 				ParNome_Reclamacao.SqlDbType = SqlDbType.VarChar;
 				ParNome_Reclamacao.Size = 50;
 				ParNome_Reclamacao.Value = nome;
@@ -75,7 +79,7 @@ namespace Classes.Transporte
 
 				SqlParameter ParDataRec_Reclamacao = new SqlParameter();
 				ParDataRec_Reclamacao.ParameterName = "@DATA_REC";
-				ParDataRec_Reclamacao.SqlDbType = SqlDbType.Date;
+				ParDataRec_Reclamacao.SqlDbType = SqlDbType.DateTime;
 				ParDataRec_Reclamacao.Value = data_rec;
 				SqlCmd.Parameters.Add(ParDataRec_Reclamacao);
 
@@ -92,6 +96,18 @@ namespace Classes.Transporte
 				ParIDEMPRESA_Reclamacao.SqlDbType = SqlDbType.Int;
 				ParIDEMPRESA_Reclamacao.Value = Id_EMPRESA;
 				SqlCmd.Parameters.Add(ParIDEMPRESA_Reclamacao);
+
+				SqlParameter ParId_Onibus_Reclamacao = new SqlParameter();
+				ParId_Onibus_Reclamacao.ParameterName = "@ID_EMPRESA";
+				ParId_Onibus_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParId_Onibus_Reclamacao.Value = Id_Onibus;
+				SqlCmd.Parameters.Add(ParId_Onibus_Reclamacao);
+
+				SqlParameter ParId_Linha_Reclamacao = new SqlParameter();
+				ParId_Linha_Reclamacao.ParameterName = "@ID_EMPRESA";
+				ParId_Linha_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParId_Linha_Reclamacao.Value = Id_Linha;
+				SqlCmd.Parameters.Add(ParId_Linha_Reclamacao);
 
 				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Reclamacao N�o Inserido";
 
@@ -191,7 +207,8 @@ namespace Classes.Transporte
 
 				SqlParameter ParDataRec_Reclamacao = new SqlParameter();
 				ParDataRec_Reclamacao.ParameterName = "@DATA_REC";
-				ParDataRec_Reclamacao.SqlDbType = SqlDbType.Date;
+				ParDataRec_Reclamacao.SqlDbType = SqlDbType.VarChar;
+				ParDataRec_Reclamacao.Size = 50;
 				ParDataRec_Reclamacao.Value = data_rec;
 				SqlCmd.Parameters.Add(ParDataRec_Reclamacao);
 
@@ -209,9 +226,21 @@ namespace Classes.Transporte
 				ParIDEMPRESA_Reclamacao.Value = Id_EMPRESA;
 				SqlCmd.Parameters.Add(ParIDEMPRESA_Reclamacao);
 
+				SqlParameter ParId_Onibus_Reclamacao = new SqlParameter();
+				ParId_Onibus_Reclamacao.ParameterName = "@ID_ONIBUS";
+				ParId_Onibus_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParId_Onibus_Reclamacao.Value = Id_Onibus;
+				SqlCmd.Parameters.Add(ParId_Onibus_Reclamacao);
+
+				SqlParameter ParId_Linha_Reclamacao = new SqlParameter();
+				ParId_Linha_Reclamacao.ParameterName = "@ID_LINHA";
+				ParId_Linha_Reclamacao.SqlDbType = SqlDbType.Int;
+				ParId_Linha_Reclamacao.Value = Id_Linha;
+				SqlCmd.Parameters.Add(ParId_Linha_Reclamacao);
 
 
-				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Edicao N�o Concluida";
+
+				Resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Edicao Não Concluida";
 
 
 
