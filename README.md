@@ -34,12 +34,6 @@
   <img alt="ProjetoBusSpot" title="#Tela Inicial" src="https://github.com/ViniciusKanh/ProjetoBusSpot/blob/main/Imagens/Interface%20Empresa/Cadastro_Linha.png " />
 </h2>
 
-<h2 align="center">
- 
- ## Tela de Cadastro de Endereço
- 
-  <img alt="ProjetoBusSpot" title="#Tela Inicial" src="https://github.com/ViniciusKanh/ProjetoBusSpot/blob/main/Imagens/Interface%20Empresa/Cadastro_Endere%C3%A7o.png" />
-</h2>
 
 <h2 align="center">
  
@@ -77,11 +71,6 @@
 ## 🛠️ Abrir e rodar o projeto
 
 **Para executar o usuario precisa, instalar em seu desktop o visual studio e o Sql server, as instruções de como criar as tabelas e procedimentos estas pastas do repositorio**
-
-## Arquitetura do Projeto
-<h4 align="center">
-  <img alt="ProjetoEndereço" title="#Caso de Uso" src="https://github.com/ViniciusKanh/ProjetoBusSpot/blob/main/Imagens/Diagramas/Arquitetura.png" />
-</h4>
 
 ## Diagrama de Caso de Uso
 <h4 align="center">
