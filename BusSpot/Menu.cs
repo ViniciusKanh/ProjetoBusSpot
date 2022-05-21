@@ -53,7 +53,8 @@
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            Transporte.Frm_Reclamacao form = new Transporte.Frm_Reclamacao();
+            form.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

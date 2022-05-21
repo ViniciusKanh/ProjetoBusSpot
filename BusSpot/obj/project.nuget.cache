@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Rhn+w8rjeQJl5jQraECCmN5aviModpgvR7/JZpIGTfRHPaQXD2+kRB4eakYPREG2AKXnnzYJLZkyjM3jRNTSHA==",
+  "dgSpecHash": "AHe5gluSIuWyTzbjGSOxIjLZAPjB4aen/1x4drJxoOJ/oo/XPMiHd98hGsRdLnx09uaoFZmCHpIgjNvwE4lGlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vinicius\\source\\repos\\ProjetoBusSpot\\BusSpot\\BusSpot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinicius\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\azure.security.keyvault.keys\\4.0.3\\azure.security.keyvault.keys.4.0.3.nupkg.sha512",
-    "C:\\Users\\Vinicius\\.nuget\\packages\\elastic.apm\\1.14.1\\elastic.apm.1.14.1.nupkg.sha512",
-    "C:\\Users\\Vinicius\\.nuget\\packages\\elastic.apm.sqlclient\\1.14.1\\elastic.apm.sqlclient.1.14.1.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\elastic.apm\\1.15.0\\elastic.apm.1.15.0.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\elastic.apm.sqlclient\\1.15.0\\elastic.apm.sqlclient.1.15.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.data.sqlclient\\3.0.0\\microsoft.data.sqlclient.3.0.0.nupkg.sha512",

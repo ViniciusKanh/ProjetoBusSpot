@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "BusSpot/1.0.0": {
         "dependencies": {
-          "Classes": "1.0.0"
+          "Classes": "1.0.0",
+          "Classes.Reference": "1.0.0.0"
         },
         "runtime": {
           "BusSpot.dll": {}
@@ -62,7 +63,7 @@
           }
         }
       },
-      "Elastic.Apm/1.14.1": {
+      "Elastic.Apm/1.15.0": {
         "dependencies": {
           "Microsoft.Diagnostics.Tracing.TraceEvent": "2.0.2",
           "System.Diagnostics.DiagnosticSource": "5.0.0",
@@ -73,19 +74,19 @@
         },
         "runtime": {
           "lib/net6.0/Elastic.Apm.dll": {
-            "assemblyVersion": "1.14.1.0",
-            "fileVersion": "1.14.1.0"
+            "assemblyVersion": "1.15.0.0",
+            "fileVersion": "1.15.0.0"
           }
         }
       },
-      "Elastic.Apm.SqlClient/1.14.1": {
+      "Elastic.Apm.SqlClient/1.15.0": {
         "dependencies": {
-          "Elastic.Apm": "1.14.1"
+          "Elastic.Apm": "1.15.0"
         },
         "runtime": {
           "lib/netstandard2.0/Elastic.Apm.SqlClient.dll": {
-            "assemblyVersion": "1.14.1.0",
-            "fileVersion": "1.14.1.0"
+            "assemblyVersion": "1.15.0.0",
+            "fileVersion": "1.15.0.0"
           }
         }
       },
@@ -525,20 +526,12 @@
           "System.Drawing.Common": "4.7.0"
         }
       },
-      "Classes/1.0.0": {
-        "dependencies": {
-          "Elastic.Apm.SqlClient": "1.14.1",
-          "Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider": "3.0.0",
-          "System.Data.SqlClient": "4.8.3",
-          "runtime.native.System.Data.SqlClient.sni": "4.7.0",
-          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
-          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
-          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0",
-          "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni": "4.3.0",
-          "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni": "4.3.0"
-        },
+      "Classes.Reference/1.0.0.0": {
         "runtime": {
-          "Classes.dll": {}
+          "Classes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -570,19 +563,19 @@
       "path": "azure.security.keyvault.keys/4.0.3",
       "hashPath": "azure.security.keyvault.keys.4.0.3.nupkg.sha512"
     },
-    "Elastic.Apm/1.14.1": {
+    "Elastic.Apm/1.15.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hY4KnRGPKOS2vmZZzlab/PUT4L9mu8B2nTNODqXC8dePauwN9f/Te4ghRDtAmZVIvO2JzbiE1mOBLZ8R1mTkrw==",
-      "path": "elastic.apm/1.14.1",
-      "hashPath": "elastic.apm.1.14.1.nupkg.sha512"
+      "sha512": "sha512-COv/yK5Ep93MAspcA43Vl6j1Lgi0KyhvEAio/kwci1fyu5rWXr5P2ueC6TLBOpoifvTFvUaIVf7gJ5ME0ikQig==",
+      "path": "elastic.apm/1.15.0",
+      "hashPath": "elastic.apm.1.15.0.nupkg.sha512"
     },
-    "Elastic.Apm.SqlClient/1.14.1": {
+    "Elastic.Apm.SqlClient/1.15.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5uTn8rEzQjHv01YeVB4LEcL4BsAgwV2PceKKFILmkB10n1B68M5gp3ScuPy+Y8MFUAq8UB36n/ZaFqfGMI3e3A==",
-      "path": "elastic.apm.sqlclient/1.14.1",
-      "hashPath": "elastic.apm.sqlclient.1.14.1.nupkg.sha512"
+      "sha512": "sha512-eUj6aRB9kMcPhGhk48P2REpa9rL7PE26nPn350NM/q3G4PquK6WmoYejcMds0VVn6rIT0ldyZfBRLWUzyczDHQ==",
+      "path": "elastic.apm.sqlclient/1.15.0",
+      "hashPath": "elastic.apm.sqlclient.1.15.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
       "type": "package",
@@ -934,8 +927,8 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "Classes/1.0.0": {
-      "type": "project",
+    "Classes.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

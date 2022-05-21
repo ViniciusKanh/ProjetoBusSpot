@@ -12,6 +12,10 @@ using Classes.Endereco;
 using Classes.Transporte;
 using Classes;
 using BusSpot.Cadastro;
+using System.Data;
+using System.Data.SqlTypes;
+using System.Data.SqlClient;
+
 
 namespace BusSpot.Transporte
 {
@@ -35,7 +39,7 @@ namespace BusSpot.Transporte
 
         private void Limpar()
         {
-            this.txtData2.Text = string.Empty;
+            this.txtData.Text = string.Empty;
             this.cbOnibus.Text = string.Empty;
             this.cbLinha.Text = string.Empty;
 
@@ -75,10 +79,10 @@ namespace BusSpot.Transporte
 
         private void habilitarCampos()
         {
-            txtData2.Enabled = true;
+            txtData.Enabled = true;
             cbLinha.Enabled = true;
             cbOnibus.Enabled = true;
-            txtData2.Focus();
+            txtData.Focus();
 
         }
 
@@ -165,7 +169,7 @@ namespace BusSpot.Transporte
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (this.txtData2.Text.Equals(""))
+            if (this.txtData.Text.Equals(""))
             {
 
                 this.MensagemErro("Selecione um Registro para Inserir");
@@ -191,7 +195,7 @@ namespace BusSpot.Transporte
         private void dataLista_DoubleClick(object sender, EventArgs e)
         {
             this.txt_ID.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["ID"].Value);
-            this.txtData2.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["Data Operação"].Value);
+            this.txtData.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["Data Operação"].Value);
             this.cbOnibus.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["Onibus"].Value);
             this.cbLinha.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["Linha"].Value);
                     }
@@ -204,7 +208,7 @@ namespace BusSpot.Transporte
             this.HabilitarBotoes();
             this.Limpar();
             this.Habilitar(true);
-            this.txtData2.Focus();
+            this.txtData.Focus();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -212,7 +216,7 @@ namespace BusSpot.Transporte
             try
             {
                 string Resp = "";
-                if (this.txtData2.Text == string.Empty)
+                if (this.txtData.Text == string.Empty)
                 {
                     MensagemErro("Preencha Todos os Campos");
 
@@ -221,11 +225,11 @@ namespace BusSpot.Transporte
                 {
                     if (this.eNovo)
                     {
-                        Resp = Operacao_Business.Inserir(txtData2.MaxDate,Convert.ToInt32(cbOnibus.SelectedValue), Convert.ToInt32(cbLinha.SelectedValue));
+                        Resp = Operacao_Business.Inserir(txtData.MinDate,Convert.ToInt32(cbOnibus.SelectedValue), Convert.ToInt32(cbLinha.SelectedValue));
                     }
                     else
                     {
-                        Resp = Operacao_Business.Editar(Convert.ToInt32(txt_ID.Text), txtData2.MaxDate, Convert.ToInt32(cbOnibus.SelectedValue), Convert.ToInt32(cbLinha.SelectedValue));
+                        Resp = Operacao_Business.Editar(Convert.ToInt32(txt_ID.Text), txtData.MaxDate, Convert.ToInt32(cbOnibus.SelectedValue), Convert.ToInt32(cbLinha.SelectedValue));
                     }
 
                     if (Resp.Equals("OK"))
@@ -275,6 +279,11 @@ namespace BusSpot.Transporte
         private void txt_Buscar_TextChanged(object sender, EventArgs e)
         {
             this.BuscarOperacao();
+        }
+
+        private void txtData_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

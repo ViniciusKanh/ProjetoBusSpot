@@ -53,7 +53,7 @@
           "lib/netstandard2.0/Azure.Security.KeyVault.Keys.dll": {}
         }
       },
-      "Elastic.Apm/1.14.1": {
+      "Elastic.Apm/1.15.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Diagnostics.Tracing.TraceEvent": "2.0.2",
@@ -70,10 +70,10 @@
           "lib/net6.0/Elastic.Apm.dll": {}
         }
       },
-      "Elastic.Apm.SqlClient/1.14.1": {
+      "Elastic.Apm.SqlClient/1.15.0": {
         "type": "package",
         "dependencies": {
-          "Elastic.Apm": "1.14.1"
+          "Elastic.Apm": "1.15.0"
         },
         "compile": {
           "lib/netstandard2.0/Elastic.Apm.SqlClient.dll": {}
@@ -768,7 +768,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Elastic.Apm.SqlClient": "1.14.1",
+          "Elastic.Apm.SqlClient": "1.15.0",
           "Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider": "3.0.0",
           "System.Data.SqlClient": "4.8.3",
           "runtime.native.System.Data.SqlClient.sni": "4.7.0",
@@ -838,16 +838,16 @@
         "pkgicon.png"
       ]
     },
-    "Elastic.Apm/1.14.1": {
-      "sha512": "hY4KnRGPKOS2vmZZzlab/PUT4L9mu8B2nTNODqXC8dePauwN9f/Te4ghRDtAmZVIvO2JzbiE1mOBLZ8R1mTkrw==",
+    "Elastic.Apm/1.15.0": {
+      "sha512": "COv/yK5Ep93MAspcA43Vl6j1Lgi0KyhvEAio/kwci1fyu5rWXr5P2ueC6TLBOpoifvTFvUaIVf7gJ5ME0ikQig==",
       "type": "package",
-      "path": "elastic.apm/1.14.1",
+      "path": "elastic.apm/1.15.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NOTICE",
-        "elastic.apm.1.14.1.nupkg.sha512",
+        "elastic.apm.1.15.0.nupkg.sha512",
         "elastic.apm.nuspec",
         "lib/net461/Elastic.Apm.dll",
         "lib/net461/Elastic.Apm.pdb",
@@ -864,15 +864,15 @@
         "nuget-icon.png"
       ]
     },
-    "Elastic.Apm.SqlClient/1.14.1": {
-      "sha512": "5uTn8rEzQjHv01YeVB4LEcL4BsAgwV2PceKKFILmkB10n1B68M5gp3ScuPy+Y8MFUAq8UB36n/ZaFqfGMI3e3A==",
+    "Elastic.Apm.SqlClient/1.15.0": {
+      "sha512": "eUj6aRB9kMcPhGhk48P2REpa9rL7PE26nPn350NM/q3G4PquK6WmoYejcMds0VVn6rIT0ldyZfBRLWUzyczDHQ==",
       "type": "package",
-      "path": "elastic.apm.sqlclient/1.14.1",
+      "path": "elastic.apm.sqlclient/1.15.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "elastic.apm.sqlclient.1.14.1.nupkg.sha512",
+        "elastic.apm.sqlclient.1.15.0.nupkg.sha512",
         "elastic.apm.sqlclient.nuspec",
         "lib/net461/Elastic.Apm.SqlClient.dll",
         "lib/net461/Elastic.Apm.SqlClient.pdb",

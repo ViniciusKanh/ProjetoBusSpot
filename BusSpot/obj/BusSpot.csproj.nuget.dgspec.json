@@ -111,7 +111,7 @@
           "dependencies": {
             "Elastic.Apm.SqlClient": {
               "target": "Package",
-              "version": "[1.14.1, )"
+              "version": "[1.15.0, )"
             },
             "Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider": {
               "target": "Package",
