@@ -274,6 +274,43 @@ namespace Classes.Endereco
 			return DtResultado;
 		}
 
+		public DataTable Buscar_Endereco(EnderecoDTO endereco)
+		{
+			DataTable DtResultado = new DataTable("Endereco");
+
+			SqlConnection Sqlcon = new SqlConnection();
+
+			try
+			{
+				Sqlcon.ConnectionString = ConexaoDB.cn;
+				SqlCommand SqlCmd = new SqlCommand();
+				SqlCmd.Connection = Sqlcon;
+				SqlCmd.CommandText = "Proc_Buscar_ViaCEP";
+				SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+				SqlParameter Partextobuscar = new SqlParameter();
+				Partextobuscar.ParameterName = "@CEP";
+				Partextobuscar.SqlDbType = SqlDbType.VarChar;
+				Partextobuscar.Size = 50;
+				Partextobuscar.Value = cep;
+				SqlCmd.Parameters.Add(Partextobuscar);
+
+				SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+				SqlDat.Fill(DtResultado);
+
+			}
+			catch (Exception error)
+			{
+				DtResultado = null;
+
+			}
+
+			finally { if (Sqlcon.State == ConnectionState.Open) Sqlcon.Close(); }
+
+			return DtResultado;
+		}
+
 	}
 }
 

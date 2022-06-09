@@ -71,5 +71,15 @@ namespace BusSpot.Cadastro
 
 
         }
+
+        public static DataTable ViaCEP(string cep)
+        {
+
+            EnderecoDTO obj = new();
+            obj.cep = cep;
+
+            return obj.Buscar_Endereco(obj);
+
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.tipoDeLogradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logradouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cEPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viaCEPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuProdutos = new System.Windows.Forms.ToolStripMenuItem();
             this.novoProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuMovimentacoes = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,6 +78,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -120,7 +122,8 @@
             this.bairroToolStripMenuItem,
             this.tipoDeLogradouroToolStripMenuItem,
             this.logradouroToolStripMenuItem,
-            this.cEPToolStripMenuItem});
+            this.cEPToolStripMenuItem,
+            this.viaCEPToolStripMenuItem});
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
             this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.funcionáriosToolStripMenuItem.Text = "Endereco";
@@ -167,6 +170,13 @@
             this.cEPToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.cEPToolStripMenuItem.Text = "CEP";
             this.cEPToolStripMenuItem.Click += new System.EventHandler(this.cEPToolStripMenuItem_Click);
+            // 
+            // viaCEPToolStripMenuItem
+            // 
+            this.viaCEPToolStripMenuItem.Name = "viaCEPToolStripMenuItem";
+            this.viaCEPToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.viaCEPToolStripMenuItem.Text = "ViaCEP";
+            this.viaCEPToolStripMenuItem.Click += new System.EventHandler(this.viaCEPToolStripMenuItem_Click);
             // 
             // MenuProdutos
             // 
@@ -265,6 +275,7 @@
             this.pnlTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlTopo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlTopo.Controls.Add(this.button8);
             this.pnlTopo.Controls.Add(this.button7);
             this.pnlTopo.Controls.Add(this.button6);
             this.pnlTopo.Controls.Add(this.button5);
@@ -659,6 +670,21 @@
             this.label1.Text = "13:00:00";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // button8
+            // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(768, 5);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(90, 81);
+            this.button8.TabIndex = 7;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -669,12 +695,14 @@
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "FrmMenu";
             this.Text = "BusSPot";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.Resize += new System.EventHandler(this.FrmMenu_Resize);
             this.menuStrip1.ResumeLayout(false);
@@ -740,5 +768,7 @@
         private ToolStripMenuItem tipoDeLogradouroToolStripMenuItem;
         private ToolStripMenuItem cadastroParadaToolStripMenuItem;
         private ToolStripMenuItem cadastroPontoToolStripMenuItem;
+        private ToolStripMenuItem viaCEPToolStripMenuItem;
+        private Button button8;
     }
 }

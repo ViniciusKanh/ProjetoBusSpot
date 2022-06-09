@@ -71,6 +71,14 @@ C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.pdb
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.genruntimeconfig.cache
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\ref\BusSpot.dll
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Cadastro.FrmViaCep.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.FrmEmpresa.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.FrmLinha.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.FrmParada.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.FrmPonto.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.Frm_Onibus.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.Frm_Operacao.resources
+C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.Transporte.Frm_Reclamacao.resources
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\bin\Release\net6.0-windows\BusSpot.dll.manifest
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\bin\Release\net6.0-windows\BusSpot.application
 C:\Users\Vinicius\source\repos\ProjetoBusSpot\BusSpot\obj\Release\net6.0-windows\BusSpot.dll.manifest

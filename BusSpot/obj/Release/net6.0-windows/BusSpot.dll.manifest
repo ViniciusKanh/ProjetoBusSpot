@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="BusSpot.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="BusSpot.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -80,22 +80,22 @@
       <dsig:DigestValue>21NZH0ICBvZnY5k1ooEcF2YLlqMzDiscduz0CnhLhtU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="BusSpot.deps.json" size="39473">
+  <file name="BusSpot.deps.json" size="38952">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>meZQtXVsc241jCcTl+/nkw5YCk7s0XaVATgvB3L5oNk=</dsig:DigestValue>
+      <dsig:DigestValue>vIOyql0R7ntCYeYIQrxnbIOaJzdouwrY5x6J1vPOAE4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="BusSpot.dll" size="2513920">
+  <file name="BusSpot.dll" size="2676224">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>a5yUv8Aya9qtG1gDX6+w7K6CqofuFSAZ0/nfEehO6A4=</dsig:DigestValue>
+      <dsig:DigestValue>zB3+aKqbPW1qvq+JvAn6HL1WEAGUNUz0NXTJnziyPG0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="BusSpot.exe" size="148992">
@@ -116,13 +116,13 @@
       <dsig:DigestValue>HsoPDHAHCqg7tgnkt0mybctECXhDJgMnJjlHIiJKCYo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classes.dll" size="31232">
+  <file name="Classes.dll" size="41984">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>brpv+AweJ/DnD+cDFwhmPPnpOBFp1O+mMtiab3j216g=</dsig:DigestValue>
+      <dsig:DigestValue>4aIj88mVEZFjoMmQFSEfyy9h5k+bzG5QpY+pnIEnR+s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Dia2Lib.dll" size="59024">
@@ -134,13 +134,13 @@
       <dsig:DigestValue>bEysaAEP4DIhjv5en89G7vn3e/ql870z8Dxf931aj6w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Elastic.Apm.dll" size="1147904">
+  <file name="Elastic.Apm.dll" size="1153536">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>oBJSg2mqy3s4koYkSRpiK8v64fK8L/vZKFwpXV9e/us=</dsig:DigestValue>
+      <dsig:DigestValue>xdEPIURvbA7+LjC2qvuoAraSQIDI4GHfd/QqwkomXEQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Elastic.Apm.SqlClient.dll" size="15360">
@@ -149,7 +149,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>BQ4kuTKY7IhqpMr7dqRmHDOPdPeXVpG7juOMXLd8jjU=</dsig:DigestValue>
+      <dsig:DigestValue>8I0OLJVTc60JLh0UnIwKImGoN5HFgrisVYVB+N+UZRQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Microsoft.Bcl.AsyncInterfaces.dll" size="14712">

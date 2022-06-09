@@ -352,5 +352,19 @@
             Transporte.Frm_Operacao form = new Transporte.Frm_Operacao();
             form.Show();
         }
+
+        private void viaCEPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro.FrmViaCep form = new Cadastro.FrmViaCep();
+            form.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+            Cadastro.FrmViaCep form = new Cadastro.FrmViaCep();
+            form.Show();
+
+        }
     }
 }
